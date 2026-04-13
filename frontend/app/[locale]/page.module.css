@@ -1,0 +1,23 @@
+.hero {
+
+  background-image: url('/images/background_landing.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+    height: 100vh;
+  position: relative;
+   z-index: 1;
+   
+}
+
+
+
+@media (min-width: 1280px) {
+  .hero {
+    padding: 36px;
+     height: 140vh;
+    
+  }
+
+}

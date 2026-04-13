@@ -8,7 +8,19 @@
   align-items: center;
   padding: 16px;
   gap: 16px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  background: rgba(251, 242, 235, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
+
+
 
 .logo {
   min-width: 0;
@@ -165,6 +177,8 @@
     padding: 24px 36px;
     display: flex;
     justify-content: space-between;
+
+    
   }
 
   .logo {
@@ -208,6 +222,7 @@
     text-decoration: none;
     position: relative;
     padding-bottom: 2px;
+    
   }
 
   .menu a::after {
@@ -234,34 +249,41 @@
   /* Utilities desktop */
   .utilities {
     margin-left: 10px;
+    
   }
 
   .utilitiesWrapper {
     display: flex;
     align-items: center;
     gap: 14px;
+    
   }
 
-  .languageSwitch a {
-    color: var(--color-text-muted);
-    text-decoration: none;
-    font-size: var(--size-nav);
-    transition: color var(--transition);
-    
-    /* blocca il layout shift del bold */
-    display: inline-flex;
-    flex-direction: column;
+  .languageSwitch {
+    display: flex;
     align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+
+    display: inline-flex;
+
   }
   
 
 
   .languageSwitch a {
-    color: var(--color-text-muted);
-    text-decoration: none;
-    font-size: var(--size-nav);
-    transition: color var(--transition);
+    font-weight: var(--weight-normal);
   }
+
+  .languageSwitch a::after {
+  content: attr(data-text);
+  display: block;
+  font-weight: var(--weight-semibold);
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+}
 
   .languageSwitch a:hover,
   .languageSwitch .activeLang {
@@ -299,10 +321,11 @@
 
 @media (min-width: 1280px) {
   .header {
-    padding: 36px;
+    padding: 24px;
+    
   }
 
   .logo {
-    max-width: 160px;
+    max-width: 200px;
   }
 }

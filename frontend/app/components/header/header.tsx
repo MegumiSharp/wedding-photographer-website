@@ -3,37 +3,52 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import styles from './header.module.css';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
+
+import styles from './header.module.css';
+
 
 export default function Header() {
     const t = useTranslations('navigation');
     const locale = useLocale();
+    const pathname = usePathname();
     const [showNavbar, setShowNavbar] = useState(false);
+
+    const isActive = (href: string) => pathname === href;
+
+    const navLinks = [
+        { href: `/${locale}`,          label: t('home') },
+        { href: `/${locale}/about`,    label: t('about') },
+        { href: `/${locale}/gallery`,  label: t('gallery') },
+        { href: `/${locale}/video`,    label: t('video') },
+        { href: `/${locale}/contact`,  label: t('contact') },
+    ];
 
     return (
         <header role="banner" className={styles.header}>
+
             {/* LOGO */}
             <div className={styles.logo}>
                 <Link href={`/${locale}`} aria-label={t('logoAriaLabel')}>
-                <Image
-                    src="/logo/logo.png"
-                    alt={t('logoAlt')}
-                    width={608}
-                    height={183}
-                    priority
-                    style={{ width: '100%', height: 'auto' }}
-                />
+                    <Image
+                        src="/logo/logo.png"
+                        alt={t('logoAlt')}
+                        width={608}
+                        height={183}
+                        priority
+                        style={{ width: '100%', height: 'auto' }}
+                    />
                 </Link>
             </div>
 
             {/* HAMBURGER — solo mobile */}
             <div className={styles.hamburgerContainer}>
                 <button
-                className={styles.hamburger}
-                onClick={() => setShowNavbar(!showNavbar)}
-                aria-label="Apri menu"
-                aria-expanded={showNavbar}
+                    className={styles.hamburger}
+                    onClick={() => setShowNavbar(!showNavbar)}
+                    aria-label={showNavbar ? 'Chiudi menu' : 'Apri menu'}
+                    aria-expanded={showNavbar}
                 >
                     <svg
                         width="24"
@@ -50,59 +65,103 @@ export default function Header() {
                 </button>
 
                 {showNavbar && (
-                <div className={styles.mobileContainer}>
-                    <div className={styles.closeBtnFrame}>
-                    <button onClick={() => setShowNavbar(false)} aria-label="Chiudi menu">
-                        ✕
-                    </button>
-                    </div>
+                    <div className={styles.mobileContainer}>
+                        <div className={styles.closeBtnFrame}>
+                            <button onClick={() => setShowNavbar(false)} aria-label="Chiudi menu">
+                                ✕
+                            </button>
+                        </div>
 
-                    <nav className={styles.mobileMenu} aria-label="Menu mobile">
-                    <Link href={`/${locale}`} onClick={() => setShowNavbar(false)}>Home</Link>
-                    <Link href={`/${locale}/chi-siamo`} onClick={() => setShowNavbar(false)}>Chi Siamo</Link>
-                    <Link href={`/${locale}/galleria`} onClick={() => setShowNavbar(false)}>Galleria</Link>
-                    <Link href={`/${locale}/video`} onClick={() => setShowNavbar(false)}>Video</Link>
-                    <Link href={`/${locale}/contatti`} onClick={() => setShowNavbar(false)}>Contatti</Link>
-                    </nav>
+                        <nav className={styles.mobileMenu} aria-label="Menu mobile">
+                            {navLinks.map((link) => (
+                                <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className={isActive(link.href) ? styles.activeMobile : ''}
+                                    aria-current={isActive(link.href) ? 'page' : undefined}
+                                    onClick={() => setShowNavbar(false)}
+                                >
+                                    {link.label}
+                                </Link>
+                            ))}
+                        </nav>
 
-                    <div className={styles.mobileUtilities}>
-                    <div className={styles.mobileLang} role="group" aria-label="Selezione lingua">
-                        <Link href="/en" lang="en">English</Link>
-                        <span aria-hidden="true">|</span>
-                        <Link href="/it" lang="it" className={styles.activeLang}>Italiano</Link>
+                        <div className={styles.mobileUtilities}>
+                            <div className={styles.mobileLang} role="group" aria-label="Selezione lingua">
+                                <Link
+                                    href="/en"
+                                    lang="en"
+                                    className={locale === 'en' ? styles.activeLang : ''}
+                                    onClick={() => setShowNavbar(false)}
+                                >
+                                    English
+                                </Link>
+                                <span aria-hidden="true">|</span>
+                                <Link
+                                    href="/it"
+                                    lang="it"
+                                    className={locale === 'it' ? styles.activeLang : ''}
+                                    onClick={() => setShowNavbar(false)}
+                                >
+                                    Italiano
+                                </Link>
+                            </div>
+                            <Link
+                                href={`/${locale}/contact`}
+                                className={styles.mobileBtn}
+                                onClick={() => setShowNavbar(false)}
+                            >
+                                {t('contactBtn')}
+                            </Link>
+                        </div>
                     </div>
-                    <Link href={`/${locale}/contatti`} className={styles.mobileBtn}>
-                        Contattaci
-                    </Link>
-                    </div>
-                </div>
                 )}
             </div>
 
             {/* NAV DESKTOP */}
-            <nav  className={styles.menuContainer} role="navigation" aria-label="Menu principale">
-                <div className={styles.menu}> 
-                    <Link href={`/${locale}`} className={styles.active}>Home</Link>
-                    <Link href={`/${locale}/chi-siamo`}>Chi Siamo</Link>
-                    <Link href={`/${locale}/galleria`}>Galleria</Link>
-                    <Link href={`/${locale}/video`}>Video</Link>
-                    <Link href={`/${locale}/contatti`}>Contatti</Link>
+            <nav className={styles.menuContainer} role="navigation" aria-label="Menu principale">
+                <div className={styles.menu}>
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.href}
+                            href={link.href}
+                            className={isActive(link.href) ? styles.active : ''}
+                            aria-current={isActive(link.href) ? 'page' : undefined}
+                        >
+                            {link.label}
+                        </Link>
+                    ))}
                 </div>
-            
 
                 <div className={styles.utilities}>
                     <div className={styles.utilitiesWrapper}>
                         <div className={styles.languageSwitch} role="group" aria-label="Selezione lingua">
-                        <Link href="/en" lang="en">English</Link>
-                        <span aria-hidden="true">|</span>
-                        <Link href="/it" lang="it" className={styles.activeLang}>Italiano</Link>
+                            <Link
+                                href="/en"
+                                lang="en"
+                                data-text="English"
+                                className={locale === 'en' ? styles.activeLang : ''}
+                            >
+                                English
+                            </Link>
+                            <span aria-hidden="true">|</span>
+                            <Link
+                                href="/it"
+                                lang="it"
+                                data-text="Italiano"
+                                className={locale === 'it' ? styles.activeLang : ''}
+                            >
+                                Italiano
+                            </Link>
                         </div>
-                        <Link href={`/${locale}/contatti`} className={styles.btn} role="button">
-                        Contattaci
+
+                        <Link href={`/${locale}/contact`} className={styles.btn} role="button">
+                            {t('contactBtn')}
                         </Link>
                     </div>
                 </div>
             </nav>
+
         </header>
     );
 }
