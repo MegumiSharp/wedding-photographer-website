@@ -1,0 +1,9 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "video": "Video",
+    "contact": "Contact"
+  }
+}
