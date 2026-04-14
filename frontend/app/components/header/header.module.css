@@ -14,13 +14,15 @@
   left: 0;
   width: 100%;
   z-index: 100;
-
-  background: rgba(251, 242, 235, 0.65);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
 }
 
+.hamburgerIcon{
+  color: var(--color-primary);
+}
 
+.utilities {
+  display: none;
+}
 
 .logo {
   min-width: 0;
@@ -77,7 +79,6 @@
   to   { opacity: 1; transform: translateX(0); }
 }
 
-
 .closeBtnFrame {
   display: flex;
   justify-content: flex-end;
@@ -88,7 +89,7 @@
   border: none;
   cursor: pointer;
   color: var(--color-white);
-  font-size: 1.4rem;
+  font-size: var(--size-large);    /* era: 1.4rem → clamp(1.2rem, 2vw, 1.5rem) */
   line-height: 1;
   padding: 4px 8px;
   opacity: 0.8;
@@ -110,7 +111,7 @@
 
 .mobileMenu a {
   font-family: var(--font-secondary);
-  font-size: clamp(1.5rem, 6vw, 2rem);
+  font-size: var(--size-xl);        /* era: clamp(1.5rem, 6vw, 2rem) */
   font-weight: 400;
   color: var(--color-white);
   text-decoration: none;
@@ -137,13 +138,13 @@
   align-items: center;
   gap: 8px;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.9rem;
+  font-size: var(--size-small);     /* era: 0.9rem */
 }
 
 .mobileLang a {
   color: rgba(255, 255, 255, 0.65);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--size-small);     /* era: 0.9rem */
   transition: color var(--transition);
 }
 
@@ -156,7 +157,7 @@
 .mobileBtn {
   font-family: var(--font-primary);
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: var(--size-body);      /* era: 0.95rem */
   color: var(--color-primary);
   background: var(--color-white);
   padding: 10px 28px;
@@ -175,26 +176,34 @@
    DESKTOP (1024px+)
    ==================== */
 @media (min-width: 1024px) {
+
+  .utilities {
+    display: block;
+       background: rgba(251, 242, 235, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 20px;
+  }
+
   .header {
     padding: 24px 36px;
     display: flex;
     justify-content: space-between;
-
-    
+    position: absolute;
   }
 
   .logo {
     max-width: 160px;
     justify-self: start;
-
   }
 
-  .menuContainer{
+  .menuContainer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 66.6%;
-
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .menu {
@@ -215,16 +224,14 @@
     display: none;
   }
 
-  /* Nav links con underline animata */
   .menu a {
     font-family: var(--font-primary);
-    font-size: var(--size-nav);
+    font-size: var(--size-nav);       /* era: clamp(0.9rem, 1.2vw, 1.125rem) — ora usa il token */
     font-weight: var(--weight-medium);
     color: var(--color-text-dark);
     text-decoration: none;
     position: relative;
     padding-bottom: 2px;
-    
   }
 
   .menu a::after {
@@ -248,30 +255,22 @@
     font-weight: var(--weight-semibold);
   }
 
-  /* Utilities desktop */
   .utilities {
     margin-left: 10px;
-    
   }
 
   .utilitiesWrapper {
     display: flex;
     align-items: center;
     gap: 14px;
-    
   }
 
   .languageSwitch {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
-    font-size: 0.9rem;
-
-    display: inline-flex;
-
+    font-size: var(--size-small);     /* era: 0.9rem */
   }
-  
-
 
   .languageSwitch a {
     font-weight: var(--weight-normal);
@@ -300,7 +299,7 @@
 
   .btn {
     font-family: var(--font-primary);
-    font-size: var(--size-nav);
+    font-size: var(--size-nav);       /* era: clamp(0.9rem, 1.2vw, 1.125rem) — ora usa il token */
     font-weight: var(--weight-medium);
     color: var(--color-white);
     background-color: var(--color-primary);
@@ -315,7 +314,6 @@
     background-color: var(--color-hover);
   }
 
-  /* Il bottone non deve avere l'underline animata */
   .btn::after {
     display: none !important;
   }
@@ -324,7 +322,6 @@
 @media (min-width: 1280px) {
   .header {
     padding: 24px;
-    
   }
 
   .logo {

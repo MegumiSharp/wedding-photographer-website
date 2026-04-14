@@ -50,7 +50,7 @@ export default function Header() {
                     aria-label={showNavbar ? 'Chiudi menu' : 'Apri menu'}
                     aria-expanded={showNavbar}
                 >
-                    <svg
+                    <svg className={styles.hamburgerIcon}
                         width="24"
                         height="18"
                         viewBox="0 0 24 18"
@@ -132,35 +132,36 @@ export default function Header() {
                         </Link>
                     ))}
                 </div>
+            </nav>
 
-                <div className={styles.utilities}>
-                    <div className={styles.utilitiesWrapper}>
-                        <div className={styles.languageSwitch} role="group" aria-label="Selezione lingua">
-                            <Link
-                                href="/en"
-                                lang="en"
-                                data-text="English"
-                                className={locale === 'en' ? styles.activeLang : ''}
-                            >
-                                English
-                            </Link>
-                            <span aria-hidden="true">|</span>
-                            <Link
-                                href="/it"
-                                lang="it"
-                                data-text="Italiano"
-                                className={locale === 'it' ? styles.activeLang : ''}
-                            >
-                                Italiano
-                            </Link>
-                        </div>
-
-                        <Link href={`/${locale}/contact`} className={styles.btn} role="button">
-                            {t('contactBtn')}
+            <div className={styles.utilities}>
+                <div className={styles.utilitiesWrapper}>
+                    <div className={styles.languageSwitch} role="group" aria-label="Selezione lingua">
+                        <Link
+                            href="/en"
+                            lang="en"
+                            data-text="English"
+                            className={locale === 'en' ? styles.activeLang : ''}
+                        >
+                            English
+                        </Link>
+                        <span aria-hidden="true">|</span>
+                        <Link
+                            href="/it"
+                            lang="it"
+                            data-text="Italiano"
+                            className={locale === 'it' ? styles.activeLang : ''}
+                        >
+                            Italiano
                         </Link>
                     </div>
+
+                    <Link href={`/${locale}/contact`} className={styles.btn} role="button">
+                        {t('contactBtn')}
+                    </Link>
                 </div>
-            </nav>
+            </div>
+            
 
         </header>
     );
