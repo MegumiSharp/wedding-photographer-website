@@ -4,6 +4,8 @@ import { getMessages } from 'next-intl/server';
 import Header from '../components/header/header';
 import PageTransition from '../components/layout/PageTransition';
 
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 export default async function LocaleLayout({
   children,
   params
@@ -19,6 +21,7 @@ export default async function LocaleLayout({
       <Header />
       <PageTransition>
         {children}
+        <SpeedInsights/>
       </PageTransition>
     </NextIntlClientProvider>
   )
