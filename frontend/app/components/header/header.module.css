@@ -169,6 +169,8 @@
   opacity: 0.88;
 }
 
+
+
 /* ====================
    DESKTOP (1024px+)
    ==================== */
@@ -276,14 +278,14 @@
   }
 
   .languageSwitch a::after {
-  content: attr(data-text);
-  display: block;
-  font-weight: var(--weight-semibold);
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  pointer-events: none;
-}
+    content: attr(data-text);
+    display: block;
+    font-weight: var(--weight-semibold);
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
   .languageSwitch a:hover,
   .languageSwitch .activeLang {
