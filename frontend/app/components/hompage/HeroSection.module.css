@@ -96,8 +96,7 @@
     align-items: center;
     gap: 36px;
 
-    padding: 64px;
-
+    padding: 20px;
 }
 
 .lowerSwirl{
@@ -116,22 +115,22 @@
     font-family: var(--font-secondary);
     
     font-weight: 500;
-    font-size: 26px;
+    font-size: var(--size-large);
     line-height: 104.62%;
     color: var(--color-text-dark);
 }
 
 .description{
     font-family: var(--font-primary);
-    font-size: 16px;
-    color: #535252;
+    font-size: var(--size-small);
+    color: var(--coloor-text-muted);
 }
 
 .subtitle{
     font-weight: 700;
     color: #2F2F2F;
     font-family: var(--font-secondary);
-    font-size: 18px;
+    font-size: var(--size-small);
 }
 
 
@@ -160,14 +159,12 @@
     }
 
     .titleContainer {
-        font-size: 46px;
+   
         line-height: var(--line-height);
         text-align: left;
         padding: var(--space-xl);
     }
 
-    .subtextContainer {
-        font-size: var(--size-body);
-    }
+
 
 }
