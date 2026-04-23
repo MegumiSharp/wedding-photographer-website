@@ -6,6 +6,9 @@ import PageTransition from '../components/layout/PageTransition';
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+
+import ScrollToTop from '../components/layout/ScrollToTop';
+
 export default async function LocaleLayout({
   children,
   params
@@ -15,10 +18,11 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
-
+  
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Header />
+      <ScrollToTop/>
       <PageTransition>
         {children}
         <SpeedInsights/>

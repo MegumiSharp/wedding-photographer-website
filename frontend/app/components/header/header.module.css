@@ -296,27 +296,6 @@
     color: var(--color-text-muted);
     opacity: 0.5;
   }
-
-  .btn {
-    font-family: var(--font-primary);
-    font-size: var(--size-nav);       /* era: clamp(0.9rem, 1.2vw, 1.125rem) — ora usa il token */
-    font-weight: var(--weight-medium);
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    padding: 8px 20px;
-    border-radius: var(--radius);
-    text-decoration: none;
-    transition: background-color var(--transition);
-    white-space: nowrap;
-  }
-
-  .btn:hover {
-    background-color: var(--color-hover);
-  }
-
-  .btn::after {
-    display: none !important;
-  }
 }
 
 @media (min-width: 1280px) {

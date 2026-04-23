@@ -156,8 +156,13 @@ export default function Header() {
                         </Link>
                     </div>
 
-                    <Link href={`/${locale}/contact`} className={styles.btn} role="button">
-                        {t('contactBtn')}
+                    
+
+                    
+                    <Link href={`/${locale}/contact`}  role="button">
+                        <button className={styles.ctaBtn}>
+                            {t('contactBtn')}
+                        </button>
                     </Link>
                 </div>
             </div>

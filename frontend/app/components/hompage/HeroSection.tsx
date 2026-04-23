@@ -4,13 +4,13 @@ import { useTranslations } from 'next-intl';
 import styles from './HeroSection.module.css';
 
 import {motion} from 'framer-motion'
+import Parallax from './Parallax/Parallax';
 
 export default function HeroSection() {
     const hero= useTranslations('hero');
     const intro= useTranslations('intro');
 
     return (
-        
         <div className={styles.heroSectionContainer}>
             <div className={styles.hero}>
                 <div className={styles.textContainer}>
@@ -32,14 +32,10 @@ export default function HeroSection() {
             
             <motion.section
                 className={styles.heroSubsectionContainer}
-                initial={{ opacity: 0, y: 40, filter: 'blur(12px)' }}
+                initial={{ opacity: 0, y: 100, filter: 'blur(6px)' }}
                 whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-                exit={{ opacity: 0, y: -30, filter: 'blur(10px)' }}
-                viewport={{ once: false, amount: 0.5 }}
-                transition={{
-                    duration: 1.2,
-                    ease: [0.22, 1, 0.36, 1],
-                }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
             >
 
                         <svg className={styles.swirls} data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2736.72 294.24" fill="#27443F">
@@ -65,6 +61,9 @@ export default function HeroSection() {
                         </svg>
 
             </motion.section>
+
+            
+            <Parallax/>
         </div>
     );
 }
