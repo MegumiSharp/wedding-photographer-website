@@ -50,7 +50,7 @@ export default function Header() {
             <div className={styles.logo}>
                 <Link href={`/${locale}`} aria-label={t('logoAriaLabel')}>
                     <Image
-                        src="/logo/Gasparro.svg"
+                        src="/logo/Gasparro.png"
                         alt={t('logoAlt')}
                         width={608}
                         height={190}
