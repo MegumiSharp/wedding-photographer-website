@@ -14,6 +14,7 @@ export default function Parallax() {
     const parallaxRef = useRef<HTMLDivElement>(null); // ✅ single ref, typed
     const parText = useTranslations('parallax');
 
+    
     const { scrollYProgress } = useScroll({
         target: parallaxRef,
         offset: ["start end", "end start"],
@@ -40,7 +41,6 @@ export default function Parallax() {
                         fill
                         style={{ objectFit: "cover" }}
                         sizes="100vw"
-                        priority
                     />
                 </motion.div>
 

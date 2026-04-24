@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 import styles from './header.module.css';
@@ -14,6 +14,24 @@ export default function Header() {
     const locale = useLocale();
     const pathname = usePathname();
     const [showNavbar, setShowNavbar] = useState(false);
+
+    const [scrolled,setScrolled] = useState(false);
+    const threshold = 80;
+
+    useEffect(() => {
+        const handler = () => {
+            // Se desktop → sempre false, se mobile → controlla scroll
+            setScrolled(window.innerWidth < 1024 && window.scrollY > threshold)
+        }
+
+        window.addEventListener('scroll', handler, { passive: true })
+        window.addEventListener('resize', handler, { passive: true })
+
+        return () => {
+            window.removeEventListener('scroll', handler)
+            window.removeEventListener('resize', handler)
+        }
+    }, [threshold])
 
     const isActive = (href: string) => pathname === href;
 
@@ -26,16 +44,16 @@ export default function Header() {
     ];
 
     return (
-        <header role="banner" className={styles.header}>
+        <header role="banner" className={`${styles.header}  ${scrolled ? styles.scrolled : ""}`}>
 
             {/* LOGO */}
             <div className={styles.logo}>
                 <Link href={`/${locale}`} aria-label={t('logoAriaLabel')}>
                     <Image
-                        src="/logo/logo.png"
+                        src="/logo/Gasparro.svg"
                         alt={t('logoAlt')}
                         width={608}
-                        height={183}
+                        height={190}
                         priority
                         style={{ width: '100%', height: 'auto' }}
                     />

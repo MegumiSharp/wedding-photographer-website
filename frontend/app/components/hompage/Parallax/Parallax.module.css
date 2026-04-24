@@ -1,12 +1,11 @@
-/*PARALLAX*/
-.motionContainer{
-    width: 100%;
+
+.parallaxWrapper {
     position: relative;
-    
+    width: 100%;
 }
 
 .parallaxContainer {
-    position: relative;
+    position: relative; 
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -14,28 +13,28 @@
     margin-bottom: 100px;
 }
 
-.parallaxImage{
+.imageWrapper {
     position: absolute;
-    width: 100%;
-    height: 130%;
-    top: -15%;
-    left: 0;    
-    
+    top: -80px;
+    left: 0;
+    right: 0;
+    bottom: -80px;
 }
-.overlay{
+
+
+.overlay {
     position: absolute;
-    width: 100%;
     inset: 0;
     background: rgba(0, 0, 0, 0.438);
-    box-shadow: inset 0px 40px 80px -16px rgba(50, 50, 93, 0.25), inset 0px 24px 48px -24px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 40px 80px -16px rgba(50, 50, 93, 0.25),
+                inset 0px 24px 48px -24px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 
-/*PARALLAX contente*/
-.parallaxContent{
-    position:absolute;
+.parallaxContent {
+    position: absolute;
     inset: 0;
-
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,57 +42,33 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-
-    color: white;
-
-    font-family: 'Judson';
+    font-family: 'Judson', serif;
     font-weight: 400;
-    
     text-align: center;
     color: #FBF2EB;
-    text-shadow: 0px 286.667px 114.667px rgba(0, 0, 0, 0.01), 0px 161.333px 97.3333px rgba(0, 0, 0, 0.05), 0px 72px 72px rgba(0, 0, 0, 0.09), 0px 17.3333px 40px rgba(0, 0, 0, 0.1);
+    text-shadow: 0px 17.3333px 40px rgba(0, 0, 0, 0.1);
+    z-index: 2;  /* ← sopra l'overlay */
 }
 
-.parTextH1{
+.parTextH1 {
     font-size: 26px;
     line-height: 104.6%;
 }
 
-.parTextSubText{
+.parTextSubText {
     width: 65%;
     font-size: 14px;
     line-height: 104.6%;
 }
 
-
-
-
 @media (min-width: 1000px) {
-    .parallaxContainer{
-        height: 600px;
-    }
-
-    .parTextH1{
-        font-size: 36px;
-    }
-
-    .parTextSubText{
-        width: 65%;
-        font-size: 18px;
-    }
+    .parallaxContainer { height: 600px; }
+    .parTextH1 { font-size: 36px; }
+    .parTextSubText { font-size: 18px; }
 }
 
 @media (min-width: 1280px) {
-    .parallaxContainer{
-        height: 800px;
-    }
-
-    .parTextH1{
-        font-size: 45px;
-    }
-
-    .parTextSubText{
-        width: 65%;
-        font-size: 24px;
-    }
+    .parallaxContainer { height: 800px; }
+    .parTextH1 { font-size: 45px; }
+    .parTextSubText { font-size: 24px; }
 }

@@ -1,12 +1,8 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-
 import Header from '../components/header/header';
 import PageTransition from '../components/layout/PageTransition';
-
 import { SpeedInsights } from "@vercel/speed-insights/next"
-
-
 import ScrollToTop from '../components/layout/ScrollToTop';
 
 export default async function LocaleLayout({
@@ -14,19 +10,19 @@ export default async function LocaleLayout({
   params
 }: {
   children: React.ReactNode
-  params: Promise<{locale: string}>
+  params: Promise<{ locale: string }>
 }) {
   const { locale } = await params;
   const messages = await getMessages({ locale });
-  
+
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <Header />
-      <ScrollToTop/>
+      <ScrollToTop />
       <PageTransition>
         {children}
-        <SpeedInsights/>
       </PageTransition>
+      <SpeedInsights />
     </NextIntlClientProvider>
   )
 }
