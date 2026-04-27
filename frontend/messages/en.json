@@ -11,12 +11,11 @@
     "contact": "Contact",
     "contactBtn": "Contact Us",
     "logoAriaLabel": "Go to Gasparro Fotografia homepage",
-    "logoAlt": "Gasparro Fotografia Logo - Photography studio specializing in weddings"
+    "logoAlt": "Gasparro Fotografie Logo - Photography studio specializing in weddings"
   },
   "hero": {
-    "title": "Every moment captured",
+    "title": "Every moment captured for your",
     "titleHighlight": "Perfect day",
-    "titlePre": "for your",
     "subtitle": "WEDDING PHOTOGRAPHER IN PUGLIA & ITALY",
     "subtitleServices": "Weddings | Maternity | Newborns"
   },
@@ -25,16 +24,16 @@
     "titleAccent": "EMOTION",
     "titlePre": "WE TRANSFORM IT INTO",
     "description": "Our studio is in constant pursuit of Beauty. As a Wedding Photographer in Puglia, our vision of photography and video is Modern & Sophisticated, spontaneously capturing every detail and every person with poetic sensitivity and an editorial touch. It will be an immersive journey into the beauty of your event, because you deserve a unique memory that lives forever.",
-    "subtitle": "That is why we preserve your most genuine moments, so you can relive love in every glance."
+    "subtitle": "That is why we preserve your most authentic moments, so you can relive the love in every glance."
   },
   "parallax": {
     "line1": "Following your",
     "accent1": "stories",
-    "line2": "Collecting your",
+    "line2": "Gathering your",
     "accent2": "memories",
     "line3": "Preserving your",
     "accent3": "legacy",
-    "description": "At Gasparro Fotografia, we are committed to telling your story and that of your wedding day by naturally capturing the details, people and authentic interactions that make it unique.",
+    "description": "At Gasparro Fotografia, we are committed to telling your story and the story of your wedding day by naturally capturing the details, people and authentic interactions that make it unique.",
     "cta": "Contact Us"
   },
   "gallerySection": {
@@ -43,30 +42,10 @@
     "textAccent1": "love",
     "textAnd": "and",
     "textAccent2": "life",
-    "description": "We tell the magic of your most special day with shots that go beyond the image. We do not just photograph — we capture emotions, details, unique moments that speak of you. A sudden smile, a gentle touch, a glance that says everything without words. Every photograph becomes a living memory, capable of taking you back in time and letting you relive those feelings. Our goal is to transform every moment into an eternal emotion, because your story deserves to be cherished forever.",
+    "description": "We tell the magic of your most special day with shots that go beyond the image. We do not just photograph: we capture emotions, details, unique moments that speak of you. A sudden smile, a gentle touch, a glance that says everything without words. Every photograph becomes a living memory, able to take you back in time and let you relive those feelings. Our goal is to turn every moment into an eternal emotion, because your story deserves to be cherished forever.",
     "cta": "Gallery",
-    "ariaLabel": "Photo gallery",
-    "carouselAriaLabel": "Photo carousel of our work",
-    "photos": [
-      { "src": "/images/landing-page/section_our_photos/photo_01.webp", "alt": "Wedding photography - Romantic moment between newlyweds" },
-      { "src": "/images/landing-page/section_our_photos/photo_02.webp", "alt": "Wedding photography - Elegant ceremony detail" },
-      { "src": "/images/landing-page/section_our_photos/photo_03.webp", "alt": "Wedding photography - Artistic portrait of the couple" },
-      { "src": "/images/landing-page/section_our_photos/photo_04.webp", "alt": "Wedding photography - Celebration and reception" },
-      { "src": "/images/landing-page/section_our_photos/photo_05.webp", "alt": "Wedding photography - Intimate and spontaneous moment" },
-      { "src": "/images/landing-page/section_our_photos/photo_06.webp", "alt": "Wedding photography - Puglia landscape during the ceremony" }
-    ],
-    "carousel": [
-      { "src": "/images/carosello/images (1).webp", "alt": "Wedding portfolio - Artistic photo" },
-      { "src": "/images/carosello/images (2).webp", "alt": "Wedding portfolio - Special moment" },
-      { "src": "/images/carosello/images (3).webp", "alt": "Wedding portfolio - Emotional detail" },
-      { "src": "/images/carosello/images (4).webp", "alt": "Wedding portfolio - Elegant portrait" },
-      { "src": "/images/carosello/images (5).webp", "alt": "Wedding portfolio - Romantic scene" },
-      { "src": "/images/carosello/images (6).webp", "alt": "Wedding portfolio - Joyful celebration" },
-      { "src": "/images/carosello/images (7).webp", "alt": "Wedding portfolio - Intimate moment" },
-      { "src": "/images/carosello/images (8).webp", "alt": "Wedding portfolio - Puglia landscape" },
-      { "src": "/images/carosello/images (9).webp", "alt": "Wedding portfolio - Artistic detail" },
-      { "src": "/images/carosello/images (10).webp", "alt": "Wedding portfolio - Candid photo" }
-    ]
+    "ariaLabel": "Photography gallery",
+    "carouselAriaLabel": "Photo carousel of our work"
   },
   "services": {
     "title": "Services",
@@ -101,28 +80,31 @@
   "locations": {
     "title": "Exclusive Wedding Photographer in Puglia and Italy",
     "marquee": "Martina Franca | Bari | Lecce | Taranto | Brindisi | Foggia | Barletta | Andria | Ostuni | Trani | Bitonto | Monopoli | Altamura | Molfetta | Ostuni | Gallipoli | Otranto | Manfredonia | San Severo | Corato | Tricase",
-    "availability": "… and available throughout Italy and abroad upon request. Do not hesitate to contact us!"
+    "availability": "… and also available throughout Italy and abroad, on request. Do not hesitate to contact us!"
   },
   "footer": {
     "studioTitle": "Studio",
     "address": "Piazza XX Settembre, 15, Martina Franca, Puglia",
+    "addressMobile": "P.zza XX Settembre 15, 74015",
+    "addressHref": "https://maps.app.goo.gl/ncPU3uYnEoQJhhvZ8",
+    "addressAriaLabel": "Link to location on Google Maps",
     "addressLabel": "Location:",
     "phone": "080 3322138",
     "phoneHref": "tel:0803322138",
     "phoneAriaLabel": "Call the landline 080 3322138",
-    "phoneLabel": "Phone:",
+    "phoneLabel": "Tel:",
     "mobile": "329 6226501",
     "mobileHref": "tel:3296226501",
     "mobileAriaLabel": "Call the mobile 329 6226501",
-    "mobileLabel": "Mobile:",
+    "mobileLabel": "Cell:",
     "email": "info@gasparrofotografia.it",
     "emailHref": "mailto:info@gasparrofotografia.it",
     "emailAriaLabel": "Send an email to info@gasparrofotografia.it",
     "emailLabel": "Email:",
     "hours": "You can visit us Monday to Saturday: 9:00 – 13:00 | 16:30 – 20:30",
     "menuTitle": "Menu",
-    "copyright": "©Gasparro Fotografia | Studio specializing in Wedding Photo and Video in Puglia & Italy | Maternity and Newborns |",
-    "privacyLabel": "Privacy Policy",
+    "copyright": " | Studio specializing in Wedding Photo and Video in Puglia & Italy | Maternity and Newborns ",
+    "privacyLabel": " Privacy Policy",
     "privacyHref": "/privacy",
     "social": {
       "instagram": {

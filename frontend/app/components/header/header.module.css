@@ -177,8 +177,6 @@
   opacity: 0.88;
 }
 
-
-
 /* ====================
    DESKTOP (1024px+)
    ==================== */
@@ -271,37 +269,33 @@
     align-items: center;
     gap: 14px;
   }
-
   .languageSwitch {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: var(--size-small);     /* era: 0.9rem */
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
   }
 
   .languageSwitch a {
-    font-weight: var(--weight-normal);
+      font-weight: var(--weight-normal);
+      color: var(--color-text-dark);
+      text-decoration: none;
+      transition: transform 200ms ease, opacity 200ms ease;
   }
 
-  .languageSwitch a::after {
-    content: attr(data-text);
-    display: block;
-    font-weight: var(--weight-semibold);
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    pointer-events: none;
+  .languageSwitch a:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
   }
 
-  .languageSwitch a:hover,
   .languageSwitch .activeLang {
-    color: var(--color-text-dark);
-    font-weight: var(--weight-semibold);
+      font-weight: var(--weight-semibold);
+      color: var(--color-text-dark);
   }
 
   .languageSwitch span {
-    color: var(--color-text-muted);
-    opacity: 0.5;
+      color: var(--color-text-muted);
+      opacity: 0.5;
   }
 }
 

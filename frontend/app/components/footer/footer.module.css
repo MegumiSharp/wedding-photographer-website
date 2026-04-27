@@ -1,0 +1,328 @@
+/* ============================================
+   FOOTER CONTAINER
+   ============================================ */
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 16px;
+    width: 100%;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   INFO BOX — MOBILE
+   ============================================ */
+
+.infoBoxContainerMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 4px;
+    gap: 4px;
+    width: 100%;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(39, 68, 63, 0.79);
+    text-align: center;
+    font-size: 12px;
+}
+
+.infoBoxContainerMobile svg {
+    display: none;
+}
+
+.infoBoxContainerMobile a {
+    text-decoration: underline;
+}
+
+.address {
+    display: none;
+}
+
+.phone {
+    display: none;
+}
+
+/* ============================================
+   INFO BOX — DESKTOP
+   ============================================ */
+
+.infoBoxContainerDesktop {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px 40px;
+    width: 100%;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #27443F;
+}
+
+.studioInformationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    color: var(--color-text-light);
+}
+
+.studioInformationContainer h3,
+.navigationMenuContainer h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #27443F;
+}
+
+.infoListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.subtext {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #535252;
+}
+
+/* ============================================
+   NAVIGATION MENU — DESKTOP FOOTER
+   ============================================ */
+
+.navigationMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu a {
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: var(--weight-medium);
+    color: var(--color-text-dark);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-primary);
+    border-radius: 999px;
+    transition: width var(--transition);
+}
+
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
+
+.menu a.active {
+    font-weight: var(--weight-semibold);
+}
+
+/* ============================================
+   LANGUAGE SWITCH
+   ============================================ */
+
+.languageSwitch {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.languageSwitch a {
+    font-weight: var(--weight-normal);
+    color: var(--color-text-dark);
+    text-decoration: none;
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.languageSwitch a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.languageSwitch .activeLang {
+    font-weight: var(--weight-semibold);
+    color: var(--color-text-dark);
+}
+
+.languageSwitch span {
+    color: var(--color-text-muted);
+    opacity: 0.5;
+}
+
+/* ============================================
+   SOCIAL & POLICY
+   ============================================ */
+
+.socialAndPolicy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    transition: transform 200ms ease;
+}
+
+.socialLinks a:hover {
+    transform: scale(1.1);
+}
+
+/* ============================================
+   COPYRIGHT
+   ============================================ */
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 8px;
+    font-size: 11px;
+    gap: 4px;
+}
+
+.copyrightNormal {
+    display: none;
+}
+
+.privacyPolicyLink {
+    text-decoration: underline;
+    font-size: 11px;
+    transition: opacity 300ms ease;
+}
+
+.privacyPolicyLink:hover {
+    opacity: 0.7;
+}
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+@media (min-width: 768px) {
+    .infoBoxContainerMobile {
+        flex-direction: row;
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .infoBoxContainerMobile svg {
+        display: flex;
+    }
+
+    .address {
+        display: inline;
+    }
+
+    .phone {
+        display: inline;
+    }
+
+    .addressMobile {
+        display: none;
+    }
+
+    .copyrightMobile {
+        display: none;
+    }
+
+    .copyrightNormal {
+        display: inline;
+    }
+}
+
+@media (min-width: 1024px) {
+    .infoBoxContainerMobile {
+        display: none;
+    }
+
+    .infoBoxContainerDesktop {
+        display: flex;
+    }
+}
+
+@media (min-width: 1280px) {
+    .infoBoxContainerDesktop {
+        padding: 32px 80px;
+    }
+
+    .studioInformationContainer h3,
+    .navigationMenuContainer h3 {
+        font-size: 16px;
+    }
+
+    .infoList {
+        font-size: 14px;
+    }
+
+    .subtext {
+        font-size: 13px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+}

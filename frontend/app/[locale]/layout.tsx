@@ -4,6 +4,7 @@ import Header from '../components/header/header';
 import PageTransition from '../components/layout/PageTransition';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import ScrollToTop from '../components/layout/ScrollToTop';
+import Footer from '../components/footer/footer';
 
 export default async function LocaleLayout({
   children,
@@ -22,6 +23,7 @@ export default async function LocaleLayout({
       <PageTransition>
         {children}
       </PageTransition>
+      <Footer/>
       <SpeedInsights />
     </NextIntlClientProvider>
   )

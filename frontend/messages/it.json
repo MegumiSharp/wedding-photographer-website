@@ -45,27 +45,7 @@
     "description": "Raccontiamo la magia del vostro giorno più speciale con scatti che vanno oltre l'immagine. Non ci limitiamo a fotografare: catturiamo emozioni, dettagli, attimi unici che parlano di voi. Un sorriso improvviso, una carezza gentile, uno sguardo che dice tutto senza bisogno di parole. Ogni fotografia diventa un ricordo vivo, capace di riportarvi indietro nel tempo e farvi rivivere quelle sensazioni. Il nostro obiettivo è trasformare ogni momento in un'emozione eterna, perché la vostra storia merita di essere custodita per sempre.",
     "cta": "Galleria",
     "ariaLabel": "Galleria fotografica",
-    "carouselAriaLabel": "Carosello fotografico dei nostri lavori",
-    "photos": [
-      { "src": "/images/landing-page/section_our_photos/photo_01.webp", "alt": "Fotografia di matrimonio - Momento romantico tra sposi" },
-      { "src": "/images/landing-page/section_our_photos/photo_02.webp", "alt": "Fotografia di matrimonio - Dettaglio elegante della cerimonia" },
-      { "src": "/images/landing-page/section_our_photos/photo_03.webp", "alt": "Fotografia di matrimonio - Ritratto artistico degli sposi" },
-      { "src": "/images/landing-page/section_our_photos/photo_04.webp", "alt": "Fotografia di matrimonio - Celebrazione e festa" },
-      { "src": "/images/landing-page/section_our_photos/photo_05.webp", "alt": "Fotografia di matrimonio - Momento intimo e spontaneo" },
-      { "src": "/images/landing-page/section_our_photos/photo_06.webp", "alt": "Fotografia di matrimonio - Paesaggio pugliese durante le nozze" }
-    ],
-    "carousel": [
-      { "src": "/images/carosello/images (1).webp", "alt": "Portfolio matrimonio - Foto artistica" },
-      { "src": "/images/carosello/images (2).webp", "alt": "Portfolio matrimonio - Momento speciale" },
-      { "src": "/images/carosello/images (3).webp", "alt": "Portfolio matrimonio - Dettaglio emozionante" },
-      { "src": "/images/carosello/images (4).webp", "alt": "Portfolio matrimonio - Ritratto elegante" },
-      { "src": "/images/carosello/images (5).webp", "alt": "Portfolio matrimonio - Scena romantica" },
-      { "src": "/images/carosello/images (6).webp", "alt": "Portfolio matrimonio - Celebrazione gioiosa" },
-      { "src": "/images/carosello/images (7).webp", "alt": "Portfolio matrimonio - Momento intimo" },
-      { "src": "/images/carosello/images (8).webp", "alt": "Portfolio matrimonio - Paesaggio pugliese" },
-      { "src": "/images/carosello/images (9).webp", "alt": "Portfolio matrimonio - Dettaglio artistico" },
-      { "src": "/images/carosello/images (10).webp", "alt": "Portfolio matrimonio - Foto spontanea" }
-    ]
+    "carouselAriaLabel": "Carosello fotografico dei nostri lavori"
   },
   "services": {
     "title": "Servizi",
@@ -105,6 +85,9 @@
   "footer": {
     "studioTitle": "Studio",
     "address": "Piazza XX Settembre, 15, Martina Franca, Puglia",
+    "addressMobile": "P.zza XX Settembre 15, 74015",
+    "addressHref" : "https://maps.app.goo.gl/ncPU3uYnEoQJhhvZ8", 
+    "addressAriaLabel": "Link a location su google maps",
     "addressLabel": "Luogo:",
     "phone": "080 3322138",
     "phoneHref": "tel:0803322138",
@@ -120,8 +103,8 @@
     "emailLabel": "Mail:",
     "hours": "Puoi venire a trovarci dal lunedì al sabato: 9.00 – 13.00 | 16.30 – 20.30",
     "menuTitle": "Menu",
-    "copyright": "©Gasparro Fotografia | Studio specializzato in Foto e Video di Matrimoni in Puglia & Italia | Maternità e Neonati |",
-    "privacyLabel": "Privacy Policy",
+    "copyright": " | Studio specializzato in Foto e Video di Matrimoni in Puglia & Italia | Maternità e Neonati ",
+    "privacyLabel": " Privacy Policy",
     "privacyHref": "/privacy",
     "social": {
       "instagram": {
