@@ -156,7 +156,7 @@ export default function Footer (){
                 <div className={styles.copyright}>
                     <p className={styles.copyrightNormal}>&#169; Gasparro Fotografia {year.getFullYear()} {t('copyright')} | {' '}</p>
                     <p className={styles.copyrightMobile}> &#169; Gasparro Fotografia {year.getFullYear()} | {' '}</p>
-                    <Link href={`/${locale}/privacy-policy`} aria-label='Link per la pagina di privacy policy' className={styles.privacyPolicyLink}>{t('privacyLabel')}</Link>
+                    <Link href={`/${locale}/privacy`} aria-label='Link per la pagina di privacy policy' className={styles.privacyPolicyLink}>{t('privacyLabel')}</Link>
                 </div>
 
                 <div className={styles.socialLinks} role="group" aria-label="Link ai social media">

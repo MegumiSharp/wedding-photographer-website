@@ -1,0 +1,211 @@
+.ourPhotosContainer{
+    overflow: hidden;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px
+}
+
+.ourPhotoTitle{
+    font-family: var(--font-secondary);
+    font-size: var(--size-medium);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.ourPhotoTitle svg{
+    width: 200px;
+}
+
+.ourPhotoMainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.photoMosaic{
+    display: none;
+}
+
+/*==================================================
+CAROSELLO
+===================================================*/
+
+.carosello{
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 12px;
+}
+
+.emblaContainer{
+    display: flex;
+    gap: 12px;
+    padding: 0px 12px;
+    transition: transform 0ms linear;
+}
+
+.emblaSlide {
+    flex: 0 0 auto;
+}
+
+.emblaSlide img {
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    width: 200px;
+    height: 300px; /* altezza fissa uguale per tutte */
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/*==================================================
+TEXT CONTAINER
+===================================================*/
+
+.textContainer {
+    position: relative;
+    padding: 50px;         /* spazio tra angoli e testo */
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.textFrame{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.textFrame h1{
+    font-family: var(--font-secondary);
+    font-size: 32px;
+    color: var(--color-primary);
+}
+
+.textFrame p {
+    font-family: var(--font-primary);
+    font-size: var(--size-body); 
+    line-height: 1.7;      
+    color: var(--color-text-dark);
+    max-width: 280px;
+}
+
+
+.cornerBL {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    transform: scaleX(-1);
+}
+
+.cornerBR {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    transform: scaleX(1);
+}
+
+.cornerTL {
+    position: absolute;
+    bottom:35%;
+    left: 5%;
+    transform: scale(-1, -1);
+}
+
+.cornerTR {
+    position: absolute;
+    bottom: 35%;
+    right: 5%;
+    transform: scale(1, -1);
+}
+
+/*==================================================
+MEDIA QUERIES
+===================================================*/
+
+
+@media (min-width: 480px) {
+    /* telefoni grandi */
+    .emblaSlide img {
+        width: 180px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 800px) {
+    .emblaSlide img {
+        width: 300px;
+        height: 420px;
+    }
+
+    .ourPhotoTitle svg{
+        width: 250px;
+        height: 50px;
+    }
+
+    .photoMosaic{
+        display: inline;
+        width: 400px;
+        height: auto;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .textFrame h1{
+        font-size: 40px;
+    }
+
+    .textFrame p{
+        font-size: var(--size-medium);
+        line-height: 30px;
+        max-width: 400px;
+    }
+
+    .ourPhotoMainContainer{
+        gap: 160px
+    }
+
+    .cornerBL {
+        top: 40%;
+        left: 5%;
+    }
+
+    .cornerBR {
+        top: 40%;
+        right: 5%;
+    }
+
+    .cornerTL {
+        bottom:40%;
+        left: 5%;
+    }
+
+    .cornerTR {
+        bottom: 40%;
+        right: 5%;
+    }
+
+
+}
+
+@media (min-width: 1280px) {
+    .emblaSlide img {
+        width: 320px;
+        height: 450px;
+    }
+}

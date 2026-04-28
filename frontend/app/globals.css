@@ -108,6 +108,11 @@ body {
   background-repeat: repeat;
   background-size: 200px 200px; 
   overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 128px;
 }
 
 img, video {
