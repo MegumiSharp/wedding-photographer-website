@@ -55,20 +55,32 @@
     line-height: 104.6%;
 }
 
-.parTextSubText {
+.descriptionMobile,
+.description {
     width: 65%;
     font-size: 14px;
     line-height: 104.6%;
 }
 
-@media (min-width: 1000px) {
-    .parallaxContainer { height: 600px; }
+.description{
+    display: none;
+}
+
+@media (min-width: 800px){
+    .parallaxContainer { height: 700px; }
+    .description { font-size: 18px;  display: inline;}
+    .descriptionMobile{display: none;}
     .parTextH1 { font-size: 36px; }
-    .parTextSubText { font-size: 18px; }
+}
+
+
+@media (min-width: 1000px) {
+    
+
 }
 
 @media (min-width: 1280px) {
     .parallaxContainer { height: 800px; }
     .parTextH1 { font-size: 45px; }
-    .parTextSubText { font-size: 24px; }
+    .description { font-size: 24px; }
 }

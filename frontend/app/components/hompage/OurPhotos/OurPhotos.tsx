@@ -71,9 +71,10 @@ export default function OurPhotos(){
                                     {t("textAccent2")}
                                 </span>
                             </h1>
-                            <p>{t('description')}</p>
+                            <p className={styles.descMobile}>{t('descriptionMobile')}</p>
+                            <p className={styles.desc}>{t('description')}</p>
                         </div>
-                        <Link href={`/${locale}/contact`} role="button">
+                        <Link href={`/${locale}/gallery`} role="button">
                             <button>{t('cta')}</button>
                         </Link>
                     </div>

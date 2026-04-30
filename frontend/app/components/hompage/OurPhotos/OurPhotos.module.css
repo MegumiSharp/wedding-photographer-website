@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 90px
+    gap: 36px
 }
 
 .ourPhotoTitle{
@@ -32,6 +32,7 @@
 .photoMosaic{
     display: none;
 }
+
 
 /*==================================================
 CAROSELLO
@@ -105,30 +106,38 @@ TEXT CONTAINER
 
 .cornerBL {
     position: absolute;
-    top: 35%;
+    top: 60%;
     left: 5%;
     transform: scaleX(-1);
+    height: 100px;
 }
 
 .cornerBR {
     position: absolute;
-    top: 35%;
+    top: 60%;
     right: 5%;
     transform: scaleX(1);
+    height: 100px;
 }
 
 .cornerTL {
     position: absolute;
-    bottom:35%;
+    bottom:60%;
     left: 5%;
     transform: scale(-1, -1);
+    height: 100px;
 }
 
 .cornerTR {
     position: absolute;
-    bottom: 35%;
+    bottom: 60%;
     right: 5%;
     transform: scale(1, -1);
+    height: 100px;
+}
+
+.desc{
+    display: none;
 }
 
 /*==================================================
@@ -161,6 +170,35 @@ MEDIA QUERIES
         height: auto;
     }
 
+    .desc{
+        display: inline;
+    }
+
+    .descMobile{
+        display: none;
+    }
+
+    .cornerBL {
+        top: 100%;
+        left: 5%;
+    }
+
+    .cornerBR {
+        top: 100%;
+        right: 5%;
+    }
+
+    .cornerTL {
+       bottom: 100%;
+        left: 5%;
+    }
+
+    .cornerTR {
+        bottom: 100%;
+        right: 5%;
+    }
+
+
 }
 
 
@@ -179,27 +217,6 @@ MEDIA QUERIES
     .ourPhotoMainContainer{
         gap: 160px
     }
-
-    .cornerBL {
-        top: 40%;
-        left: 5%;
-    }
-
-    .cornerBR {
-        top: 40%;
-        right: 5%;
-    }
-
-    .cornerTL {
-        bottom:40%;
-        left: 5%;
-    }
-
-    .cornerTR {
-        bottom: 40%;
-        right: 5%;
-    }
-
 
 }
 

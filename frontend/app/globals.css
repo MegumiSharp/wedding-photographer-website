@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+
 :root {
   /* Colors */
   --color-primary: #27443F;
@@ -17,6 +20,7 @@
   --font-primary: 'Afacad', sans-serif;
   --font-secondary: 'Judson', serif;
   --font-script: 'League Script', cursive;
+  --font-script2: 'Petit Formal Script', cursive;
   
   /* Font sizes → rem/clamp */
   --size-nav: clamp(0.9rem, 1.2vw, 1.125rem);   /* 14–18px */
@@ -111,7 +115,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   gap: 128px;
 }
 

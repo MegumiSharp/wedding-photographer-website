@@ -24,16 +24,20 @@
     "titleAccent": "EMOZIONE",
     "titlePre": "NOI LO TRASFORMIAMO IN",
     "description": "Il nostro studio è alla continua ricerca della Bellezza. Come Fotografo di Matrimonio in Puglia, la nostra visione di fotografia e video è Moderna & Sofisticata catturando con spontaneità ogni dettaglio ed ogni persona con una sensibilità poetica e con un tocco editoriale. Sarà un viaggio immersivo nella bellezza del vostro evento perchè meritate un ricordo unico che viva per sempre",
-    "subtitle": "Per questo custodiamo i vostri istanti più veri, affinché possiate rivivere l'amore in ogni sguardo."
+    "descriptionMobile" : "Fotografia moderna e sofisticata, con sensibilità poetica e tocco editoriale. Ogni istante del vostro giorno, custodito per sempre." ,
+    "subtitle": "Per questo custodiamo i vostri istanti più veri, affinché possiate rivivere l'amore in ogni sguardo.",
+    "subtitleMobile": "Per rivivere l'amore in ogni sguardo"
+    
   },
   "parallax": {
-    "line1": "Seguendo le tue storie",
+    "line1": "Seguendo le tue",
     "accent1": "storie",
     "line2": "Raccogliendo i tuoi",
     "accent2": "ricordi",
     "line3": "Custodendo la tua",
     "accent3": "eredità",
     "description": "A Gasparro Fotografia, ci impegniamo a raccontare la tua storia e quella del giorno del tuo matrimonio catturando con naturalezza i dettagli, le persone e le interazioni autentiche che lo rendono unico.",
+    "descriptionMobile": "Raccontiamo la tua storia catturando dettagli, persone e momenti autentici che rendono unico il tuo matrimonio.",
     "cta": "Contattaci"
   },
   "gallerySection": {
@@ -42,7 +46,8 @@
     "textAccent1": "amore",
     "textAnd": "e",
     "textAccent2": "vita",
-    "description": "Raccontiamo la magia del vostro giorno più speciale con scatti che vanno oltre l'immagine. Non ci limitiamo a fotografare: catturiamo emozioni, dettagli, attimi unici che parlano di voi. Un sorriso improvviso, una carezza gentile, uno sguardo che dice tutto senza bisogno di parole. Ogni fotografia diventa un ricordo vivo, capace di riportarvi indietro nel tempo e farvi rivivere quelle sensazioni. Il nostro obiettivo è trasformare ogni momento in un'emozione eterna, perché la vostra storia merita di essere custodita per sempre.",
+    "descriptionMobile": "Emozioni, dettagli, attimi unici. La vostra storia, custodita per sempre",
+    "description": "Raccontiamo la magia del vostro giorno più speciale con scatti che vanno oltre l'immagine. Non ci limitiamo a fotografare: catturiamo emozioni, dettagli, attimi unici che parlano di voi. Un sorriso improvviso, una carezza gentile, uno sguardo che dice tutto. Perché la vostra storia merita di essere custodita per sempre.",
     "cta": "Galleria",
     "ariaLabel": "Galleria fotografica",
     "carouselAriaLabel": "Carosello fotografico dei nostri lavori"
@@ -122,6 +127,7 @@
         "ariaLabel": "Visita la nostra pagina Facebook",
         "alt": "Facebook"
       }
+      
     }
   }
 }

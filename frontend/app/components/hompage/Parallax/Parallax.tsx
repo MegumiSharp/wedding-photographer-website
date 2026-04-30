@@ -52,9 +52,8 @@ export default function Parallax() {
                         {parText('line2')} <span style={{ color: "var(--color-accent)" }}>{parText('accent2')}</span><br />
                         {parText('line3')} <span style={{ color: "var(--color-accent)" }}>{parText('accent3')}</span><br />
                     </p>
-                    <p className={styles.parTextSubText}>
-                        {parText('description')}
-                    </p>
+                    <p className={styles.description}>{parText('description')}</p>
+                    <p className={styles.descriptionMobile}>{parText('descriptionMobile')}</p>
                     <Link href={`/${locale}/contact`} role="button">
                         <button>{parText('cta')}</button>
                     </Link>
