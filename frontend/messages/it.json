@@ -129,5 +129,44 @@
       }
       
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro1": "Informativa sul trattamento dei dati personali (art. 13 della Legge 196/03) per il sito ",
+    "link": "www.gasparrofotografia.it",
+    "linkHref": "https://www.gasparrofotografia.it",
+    "intro2": " di Donato Gasparro. L'informativa presente in questa pagina riassume le politiche di privacy e riservatezza dei dati personali di Donato Gasparro, società titolare del sito ",
+    "intro3": ". La presente informativa è resa ai sensi dell'art. 13 del D.lgs. N. 196/2003 – Codice in materia di protezione dei dati personali – a coloro che interagiscono con i servizi web di Donato Gasparro, accessibili all'indirizzo web ",
+    "intro4": ". La policy non si applica ad altri siti web accessibili tramite i nostri link, di cui Donato Gasparro non è in alcun modo responsabile.",
+
+    "section1Title": "1. Titolare del trattamento",
+    "section1Text": "Il titolare del trattamento dei dati personali è Donato Gasparro, Studio Fotografico: Fotografia Gasparro, con sede in Piazza XX Settembre, 15, Martina Franca 74015, Puglia, Italia, contattabile via e-mail: info@gasparrofotografia.it.",
+
+    "section2Title": "2. Ambito di applicazione",
+    "section2Text": "La presente informativa si applica al sito www.gasparrofotografia.it e descrive le modalità di trattamento dei dati personali forniti dagli utenti tramite il form di contatto. La policy non si applica ad altri siti web eventualmente linkati, dei quali lo studio non è responsabile.",
+
+    "section3Title": "3. Tipologia di dati raccolti",
+    "section3Text": "Attraverso il modulo di contatto possono essere raccolti: nome e cognome, indirizzo e-mail, cellulare ed eventuali altri dati forniti volontariamente dall'utente nel messaggio.",
+
+    "section4Title": "4. Finalità del trattamento",
+    "section4Text": "I dati raccolti tramite il modulo di contatto saranno utilizzati esclusivamente per rispondere alle richieste di contatto della clientela (es. spose o clienti interessati ai servizi fotografici) e mantenere la corrispondenza via e-mail fino alla conclusione della discussione. I dati non saranno utilizzati per finalità di marketing né condivisi con terzi, salvo obblighi di legge.",
+
+    "section5Title": "5. Base giuridica del trattamento",
+    "section5Text": "Il trattamento si basa sull'esecuzione di misure precontrattuali su richiesta dell'interessato (art. 6, comma 1, lettera b del GDPR). Non è richiesto un consenso tramite checkbox per l'invio del form.",
+
+    "section6Title": "6. Conservazione dei dati",
+    "section6Text": "I dati saranno conservati solo per il tempo necessario a rispondere alle richieste e mantenere la corrispondenza via e-mail. Oltre questo periodo, i dati non saranno salvati.",
+
+    "section7Title": "7. Modalità di trattamento",
+    "section7Text": "I dati sono trattati con strumenti elettronici e con misure di sicurezza adeguate per prevenire perdite, accessi non autorizzati o utilizzi illeciti.",
+
+    "section8Title": "8. Cookie e strumenti di tracciamento",
+    "section8Text": "Il sito non utilizza cookie di profilazione o sistemi di tracciamento esterni.",
+
+    "section9Title": "9. Uso delle fotografie",
+    "section9Text": "Le foto realizzate dallo studio possono essere utilizzate a fini pubblicitari sul sito, sui social media e su materiale promozionale. Il copyright delle foto appartiene a Donato Gasparro / Studio Fotografico Fotografia Gasparro. Eventuali immagini di clienti saranno pubblicate solo previo consenso esplicito.",
+
+    "section10Title": "10. Diritti dell'interessato",
+    "section10Text": "Gli utenti del sito www.gasparrofotografia.it hanno il diritto, in qualsiasi momento, di ottenere la conferma dell'esistenza o meno di dati personali che li riguardano, di conoscerne il contenuto e l'origine, di verificarne l'esattezza oppure di chiederne l'integrazione, l'aggiornamento o la rettifica. Hanno inoltre il diritto di richiederne la cancellazione, la limitazione del trattamento o di opporsi, per motivi legittimi, al loro trattamento, nonché di esercitare – ove applicabile – il diritto alla portabilità dei dati. Per l'esercizio di questi diritti è possibile contattare il Titolare del trattamento inviando una comunicazione all'indirizzo e-mail info@gasparrofotografia.it."
   }
 }

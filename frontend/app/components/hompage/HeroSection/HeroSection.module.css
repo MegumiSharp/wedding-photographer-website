@@ -161,7 +161,7 @@
     }
     
     .heroSectionContainer {
-        gap: var(--space-xxl);
+        gap: var(--space-xl);
     }
 
     .hero {

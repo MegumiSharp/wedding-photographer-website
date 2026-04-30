@@ -91,7 +91,7 @@ TEXT CONTAINER
 
 .textFrame h1{
     font-family: var(--font-secondary);
-    font-size: 32px;
+    font-size: 30px;
     color: var(--color-primary);
 }
 

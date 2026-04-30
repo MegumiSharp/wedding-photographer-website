@@ -1,9 +1,11 @@
+import PrivacyPolicy from "@/app/components/privacy/privacyPolicy"
+
 
 export default function Privacy(){
 
     return (
         <div>
-            Privacy Page
+            <PrivacyPolicy/>
         </div>
     )
 }

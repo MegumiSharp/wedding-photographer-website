@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useTranslations, useLocale } from 'next-intl'
 import useEmblaCarousel from 'embla-carousel-react'
 import AutoScroll from 'embla-carousel-auto-scroll'
+import { motion } from 'framer-motion'
 
 import { SwirlTitleSVG, CornerSVG } from '../../icons/Icons'
 import styles from './OurPhotos.module.css'
@@ -36,7 +37,12 @@ export default function OurPhotos(){
     const locale = useLocale();
 
     return (
-        <div className={styles.ourPhotosContainer}>
+        <motion.div 
+                initial={{ opacity: 0, y: 80 }}
+                whileInView={{ opacity: 1, y: 0}}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{duration: 1.0, ease: [0.25, 0.46, 0.45, 0.94] }} 
+                className={styles.ourPhotosContainer}>
 
             <div className={styles.ourPhotoTitle}>
                 <SwirlTitleSVG rotate={true}/>
@@ -44,7 +50,9 @@ export default function OurPhotos(){
                 <SwirlTitleSVG/>
             </div>
 
-            <div className={styles.ourPhotoMainContainer}>
+        
+            
+                <div className={styles.ourPhotoMainContainer}>
                 <Image
                     src='/images/OurPhotosMosaic.png'
                     alt= {'lello'}
@@ -97,6 +105,6 @@ export default function OurPhotos(){
                     ))}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
