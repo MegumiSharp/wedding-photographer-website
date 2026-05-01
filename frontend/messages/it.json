@@ -55,26 +55,18 @@
   "services": {
     "title": "Servizi",
     "ariaLabel": "I nostri servizi fotografici",
-    "items": [
-      {
-        "icon": "/icons/landing_page/matrimonio.svg",
-        "iconAlt": "Icona servizio matrimoni",
-        "title": "Matrimoni",
-        "description": "Catturiamo ogni momento prezioso del tuo giorno speciale con sensibilità artistica e intensità emotiva. Dai riti più intimi alle celebrazioni più grandi."
-      },
-      {
-        "icon": "/icons/landing_page/maternity.svg",
-        "iconAlt": "Icona servizio maternità",
-        "title": "Maternità",
-        "description": "Celebriamo il meraviglioso viaggio della maternità con ritratti eleganti e intimi che raccontano l'attesa e la gioia di questo momento unico."
-      },
-      {
-        "icon": "/icons/landing_page/newborn.svg",
-        "iconAlt": "Icona servizio neonati",
-        "title": "Neonati",
-        "description": "Servizi delicati e sicuri che immortalano i primi istanti di vita. Ritratti artistici che custodiscono il miracolo della nascita con tenerezza e cura."
-      }
-    ]
+    "weddings": {
+      "title": "Matrimoni",
+      "description": "Catturiamo ogni momento prezioso del tuo giorno speciale con sensibilità artistica e intensità emotiva."
+    },
+    "maternity": {
+      "title": "Maternità",
+      "description": "Celebriamo il meraviglioso viaggio della maternità con ritratti eleganti e intimi che raccontano l'attesa e la gioia di questo momento unico."
+    },
+    "newborn": {
+      "title": "Neonati",
+      "description": "Servizi delicati e sicuri che immortalano i primi istanti di vita. Ritratti artistici che custodiscono il miracolo della nascita con tenerezza e cura."
+    }
   },
   "finalSection": {
     "title": "IL PROSSIMO CAPITOLO TI",

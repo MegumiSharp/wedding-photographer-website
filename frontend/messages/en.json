@@ -22,9 +22,11 @@
   "intro": {
     "title": "EVERY DETAIL SPEAKS OF YOU:",
     "titleAccent": "EMOTION",
-    "titlePre": "WE TRANSFORM IT INTO",
-    "description": "Our studio is in constant pursuit of Beauty. As a Wedding Photographer in Puglia, our vision of photography and video is Modern & Sophisticated, spontaneously capturing every detail and every person with poetic sensitivity and an editorial touch. It will be an immersive journey into the beauty of your event, because you deserve a unique memory that lives forever.",
-    "subtitle": "That is why we preserve your most authentic moments, so you can relive the love in every glance."
+    "titlePre": "WE TURN IT INTO",
+    "description": "Our studio is in constant pursuit of Beauty. As a Wedding Photographer in Puglia, our vision of photography and video is Modern & Sophisticated, capturing with spontaneity every detail and every person with poetic sensitivity and an editorial touch. It will be an immersive journey into the beauty of your event, because you deserve a unique memory that lives forever.",
+    "descriptionMobile": "Modern and sophisticated photography, with poetic sensitivity and an editorial touch. Every moment of your day, treasured forever.",
+    "subtitle": "That is why we preserve your most genuine moments, so you can relive the love in every glance.",
+    "subtitleMobile": "To relive the love in every glance"
   },
   "parallax": {
     "line1": "Following your",
@@ -33,7 +35,8 @@
     "accent2": "memories",
     "line3": "Preserving your",
     "accent3": "legacy",
-    "description": "At Gasparro Fotografia, we are committed to telling your story and the story of your wedding day by naturally capturing the details, people and authentic interactions that make it unique.",
+    "description": "At Gasparro Fotografia, we are committed to telling your story and that of your wedding day by naturally capturing the details, people and authentic interactions that make it unique.",
+    "descriptionMobile": "We tell your story by capturing the details, people and authentic moments that make your wedding unique.",
     "cta": "Contact Us"
   },
   "gallerySection": {
@@ -42,45 +45,38 @@
     "textAccent1": "love",
     "textAnd": "and",
     "textAccent2": "life",
-    "description": "We tell the magic of your most special day with shots that go beyond the image. We do not just photograph: we capture emotions, details, unique moments that speak of you. A sudden smile, a gentle touch, a glance that says everything without words. Every photograph becomes a living memory, able to take you back in time and let you relive those feelings. Our goal is to turn every moment into an eternal emotion, because your story deserves to be cherished forever.",
+    "descriptionMobile": "Emotions, details, unique moments. Your story, treasured forever.",
+    "description": "We tell the magic of your most special day with shots that go beyond the image. We do not simply photograph: we capture emotions, details, unique moments that speak of you. A sudden smile, a gentle touch, a glance that says it all. Because your story deserves to be treasured forever.",
     "cta": "Gallery",
-    "ariaLabel": "Photography gallery",
+    "ariaLabel": "Photo gallery",
     "carouselAriaLabel": "Photo carousel of our work"
   },
   "services": {
     "title": "Services",
     "ariaLabel": "Our photography services",
-    "items": [
-      {
-        "icon": "/icons/landing_page/matrimonio.svg",
-        "iconAlt": "Wedding service icon",
-        "title": "Weddings",
-        "description": "We capture every precious moment of your special day with artistic sensitivity and emotional intensity. From the most intimate rituals to the grandest celebrations."
-      },
-      {
-        "icon": "/icons/landing_page/maternity.svg",
-        "iconAlt": "Maternity service icon",
-        "title": "Maternity",
-        "description": "We celebrate the wonderful journey of motherhood with elegant and intimate portraits that tell the story of anticipation and joy of this unique moment."
-      },
-      {
-        "icon": "/icons/landing_page/newborn.svg",
-        "iconAlt": "Newborn service icon",
-        "title": "Newborns",
-        "description": "Gentle and safe sessions that immortalize the first moments of life. Artistic portraits that preserve the miracle of birth with tenderness and care."
-      }
-    ]
+    "weddings": {
+      "title": "Weddings",
+      "description": "We capture every precious moment of your special day with artistic sensitivity and emotional depth."
+    },
+    "maternity": {
+      "title": "Maternity",
+      "description": "We celebrate the wonderful journey of maternity with elegant and intimate portraits that tell the story of anticipation and joy of this unique moment."
+    },
+    "newborn": {
+      "title": "Newborns",
+      "description": "Delicate and safe sessions that immortalize the first moments of life. Artistic portraits that preserve the miracle of birth with tenderness and care."
+    }
   },
   "finalSection": {
-    "title": "THE NEXT CHAPTER",
-    "titleAccent": "AWAITS YOU",
+    "title": "THE NEXT CHAPTER IS",
+    "titleAccent": "WAITING FOR YOU",
     "subtitle": "Discover the opportunities created for you",
     "cta": "Contact Us"
   },
   "locations": {
     "title": "Exclusive Wedding Photographer in Puglia and Italy",
     "marquee": "Martina Franca | Bari | Lecce | Taranto | Brindisi | Foggia | Barletta | Andria | Ostuni | Trani | Bitonto | Monopoli | Altamura | Molfetta | Ostuni | Gallipoli | Otranto | Manfredonia | San Severo | Corato | Tricase",
-    "availability": "… and also available throughout Italy and abroad, on request. Do not hesitate to contact us!"
+    "availability": "… and also available throughout Italy and abroad, upon request. Do not hesitate to contact us!"
   },
   "footer": {
     "studioTitle": "Studio",
@@ -101,10 +97,10 @@
     "emailHref": "mailto:info@gasparrofotografia.it",
     "emailAriaLabel": "Send an email to info@gasparrofotografia.it",
     "emailLabel": "Email:",
-    "hours": "You can visit us Monday to Saturday: 9:00 – 13:00 | 16:30 – 20:30",
+    "hours": "You can visit us Monday to Saturday: 9:00 AM – 1:00 PM | 4:30 PM – 8:30 PM",
     "menuTitle": "Menu",
-    "copyright": " | Studio specializing in Wedding Photo and Video in Puglia & Italy | Maternity and Newborns ",
-    "privacyLabel": " Privacy Policy",
+    "copyright": " | Studio specializing in Wedding Photo and Video in Puglia & Italy | Maternity and Newborns",
+    "privacyLabel": "Privacy Policy",
     "privacyHref": "/privacy",
     "social": {
       "instagram": {
@@ -123,5 +119,34 @@
         "alt": "Facebook"
       }
     }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro1": "Information on the processing of personal data (art. 13 of Law 196/03) for the website ",
+    "link": "www.gasparrofotografia.it",
+    "linkHref": "https://www.gasparrofotografia.it",
+    "intro2": " by Donato Gasparro. The information on this page summarizes the privacy and personal data protection policies of Donato Gasparro, the company that owns the website ",
+    "intro3": ". This notice is provided pursuant to art. 13 of Legislative Decree No. 196/2003 – Personal Data Protection Code – to those who interact with the web services of Donato Gasparro, accessible at the web address ",
+    "intro4": ". This policy does not apply to other websites accessible through our links, for which Donato Gasparro is in no way responsible.",
+    "section1Title": "1. Data Controller",
+    "section1Text": "The data controller is Donato Gasparro, Photography Studio: Fotografia Gasparro, located at Piazza XX Settembre, 15, Martina Franca 74015, Puglia, Italy, reachable by email: info@gasparrofotografia.it.",
+    "section2Title": "2. Scope of Application",
+    "section2Text": "This notice applies to the website www.gasparrofotografia.it and describes how personal data provided by users through the contact form is processed. The policy does not apply to other linked websites, for which the studio is not responsible.",
+    "section3Title": "3. Types of Data Collected",
+    "section3Text": "Through the contact form, the following data may be collected: first and last name, email address, mobile number and any other data voluntarily provided by the user in the message.",
+    "section4Title": "4. Purpose of Processing",
+    "section4Text": "Data collected through the contact form will be used exclusively to respond to contact requests from clients (e.g. brides or clients interested in photography services) and to maintain email correspondence until the discussion is concluded. Data will not be used for marketing purposes nor shared with third parties, except as required by law.",
+    "section5Title": "5. Legal Basis for Processing",
+    "section5Text": "Processing is based on the performance of pre-contractual measures at the request of the data subject (art. 6, paragraph 1, letter b of the GDPR). No consent via checkbox is required to submit the form.",
+    "section6Title": "6. Data Retention",
+    "section6Text": "Data will be retained only for as long as necessary to respond to requests and maintain email correspondence. Beyond this period, data will not be stored.",
+    "section7Title": "7. Processing Methods",
+    "section7Text": "Data is processed using electronic tools and appropriate security measures to prevent loss, unauthorized access or unlawful use.",
+    "section8Title": "8. Cookies and Tracking Tools",
+    "section8Text": "The website does not use profiling cookies or external tracking systems.",
+    "section9Title": "9. Use of Photographs",
+    "section9Text": "Photos taken by the studio may be used for advertising purposes on the website, social media and promotional materials. The copyright of the photos belongs to Donato Gasparro / Photography Studio Fotografia Gasparro. Any images of clients will only be published with their explicit consent.",
+    "section10Title": "10. Rights of the Data Subject",
+    "section10Text": "Users of www.gasparrofotografia.it have the right, at any time, to obtain confirmation of whether or not personal data concerning them exists, to know its content and origin, to verify its accuracy or to request its integration, updating or correction. They also have the right to request its deletion, restriction of processing or to object, for legitimate reasons, to its processing, as well as to exercise – where applicable – the right to data portability. To exercise these rights, please contact the Data Controller by sending a message to info@gasparrofotografia.it."
   }
 }

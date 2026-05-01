@@ -1,0 +1,11 @@
+.mainSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+
+@media (min-width: 1000px){
+    .mainSection{gap: 128px}
+}
