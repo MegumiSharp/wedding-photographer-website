@@ -269,6 +269,7 @@
     align-items: center;
     gap: 14px;
   }
+
   .languageSwitch {
       display: inline-flex;
       align-items: center;
@@ -300,11 +301,17 @@
 }
 
 @media (min-width: 1280px) {
-  .header {
-    padding: 24px;
-  }
+    .header {
+      padding: 24px;
+    }
 
-  .logo {
-    max-width: 170px;
-  }
+    .logo {
+      max-width: 170px;
+    }
+  
+    .languageSwitch{
+      font-size: 16px;
+    }
+  
 }
+

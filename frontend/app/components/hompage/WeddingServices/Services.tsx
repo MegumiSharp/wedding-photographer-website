@@ -119,8 +119,10 @@ export default function Services() {
                 </div>
 
                 <div className={styles.overlay}>
-                    <p>{f('title')} <span style={{color: "#D2B48C"}}>{f('titleAccent')}</span></p>
-                    <span className={styles.subs}>{f('subtitle')}</span>
+                    <div className={styles.titsubtit}>
+                      <p>{f('title')} <span style={{color: "#D2B48C"}}>{f('titleAccent')}</span></p>
+                      <span className={styles.subs}>{f('subtitle')}</span>
+                    </div>
                     <Link href={`/${locale}/contact`} role="button"> <button>{f('cta')}</button> </Link>                 
                 </div>
 

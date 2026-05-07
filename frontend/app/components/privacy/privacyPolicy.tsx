@@ -9,11 +9,12 @@ export default function PrivacyPolicy(){
 
     return(
         <div className={styles.textContainer}>
-                <CornerSVG width={80} className={styles.cornerBL}/>
-                <CornerSVG width={80} className={styles.cornerBR}/>
-                <CornerSVG width={80} className={styles.cornerTL}/>
-                <CornerSVG width={80} className={styles.cornerTR}/>
+            <div className={styles.topCorners}>
+                <CornerSVG width={80} className={styles.cornerRight}/>
+                <CornerSVG width={80} className={styles.cornerLeft}/>
+            </div>
 
+            <div className={styles.subcontainer}>
                 <div className={styles.ourPhotoTitle}>
                         <SwirlTitleSVG rotate={true}/>
                     <h2>{t('title')}</h2>
@@ -82,7 +83,12 @@ export default function PrivacyPolicy(){
                         </div>
                     </div>
                 </div>
-                
+            </div>
+            
+            <div className={styles.bottomCorners}>
+                <CornerSVG width={80} className={styles.cornerBRight}/>
+                <CornerSVG width={80} className={styles.cornerBLeft}/>
+            </div>
         </div>
     )
 }

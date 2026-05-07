@@ -61,7 +61,6 @@ CAROSELLO
     object-fit: cover;
     width: 200px;
     height: 300px; /* altezza fissa uguale per tutte */
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -91,7 +90,7 @@ TEXT CONTAINER
 
 .textFrame h1{
     font-family: var(--font-secondary);
-    font-size: 30px;
+    font-size: 24px;
     color: var(--color-primary);
 }
 

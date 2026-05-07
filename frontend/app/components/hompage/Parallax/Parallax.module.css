@@ -49,7 +49,7 @@
 }
 
 .parTextH1 {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 104.6%;
 }
 
@@ -81,5 +81,5 @@
 @media (min-width: 1280px) {
     .parallaxContainer { height: 800px; }
     .parTextH1 { font-size: 45px; }
-    .description { font-size: 24px; }
+    .description { max-width:40%;font-size: 20px; }
 }

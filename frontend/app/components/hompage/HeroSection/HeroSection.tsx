@@ -47,7 +47,7 @@ export default function HeroSection() {
                 <path d="M2203.83,159.42c-7.1,2.9-6.9,13.3.3,16.1,9.7,3.7,16.4-10.9,7.2-15.6-3.1-1.7-4.4-1.8-7.5-.5Z"/>
                 </svg>
                 <div className={styles.subsectionText}>
-                    <h2>{intro('title')} {intro('titlePre')}<span style={{color: "#D2B48C"}}> {intro('titleAccent')}</span></h2>
+                    <h2>{intro('title')} <br/>{intro('titlePre')}<span style={{color: "#D2B48C"}}> {intro('titleAccent')}</span></h2>
                     <p className={styles.description}>{intro('description')}</p>
                     <p className={styles.subtitle}>{intro('subtitle')}</p>
                     <p className={styles.descriptionMobile}>{intro('descriptionMobile')}</p>
