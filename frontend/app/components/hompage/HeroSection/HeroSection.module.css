@@ -102,7 +102,7 @@
 .subsectionText h2 {
     font-family: var(--font-secondary);
     font-weight: var(--weight-medium);
-    font-size: 18px;
+    font-size: 22px;
     line-height: var(--line-height);
     color: var(--color-text-dark);
 }
