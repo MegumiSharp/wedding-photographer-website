@@ -54,7 +54,7 @@ export default function Parallax() {
                     </p>
                     <p className={styles.description}>{parText('description')}</p>
                     <p className={styles.descriptionMobile}>{parText('descriptionMobile')}</p>
-                    <Link href={`/${locale}/contact`} role="button">
+                    <Link href={`/${locale}/contact#contact-form`} role="button">
                         <button>{parText('cta')}</button>
                     </Link>
                 </div>

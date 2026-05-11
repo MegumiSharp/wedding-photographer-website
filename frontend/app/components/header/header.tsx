@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 import styles from './header.module.css';
 
@@ -60,6 +60,26 @@ export default function Header() {
         { href: `/${locale}/video`,    label: t('video') },
         { href: `/${locale}/contact`,  label: t('contact') },
     ];
+
+    const router = useRouter();
+
+    //Se giá sulla pagina scrolla sul form
+    const handleClick = () => {
+        if (pathname.includes('/contact')) {
+            document.getElementById('contact-form')?.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'center'
+            });
+        } else {
+            router.push(`/${locale}/contact`);
+            setTimeout(() => {
+                document.getElementById('contact-form')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'center'
+                });
+            }, 500);
+        }
+    }
 
     return (
         <header role="banner" className={`${styles.header}  ${scrolled ? styles.scrolled : ""}`}>
@@ -142,13 +162,15 @@ export default function Header() {
                                     Italiano
                                 </Link>
                             </div>
-                            <Link
-                                href={`/${locale}/contact`}
+                            <button
                                 className={styles.mobileBtn}
-                                onClick={() => setShowNavbar(false)}
+                                onClick={() => {
+                                    setShowNavbar(false);
+                                    handleClick();
+                                }}
                             >
                                 {t('contactBtn')}
-                            </Link>
+                            </button>
                         </div>
                     </div>
                 )}
@@ -195,11 +217,9 @@ export default function Header() {
                     
 
                     
-                    <Link href={`/${locale}/contact`}  role="button">
-                        <button className={styles.ctaBtn}>
-                            {t('contactBtn')}
-                        </button>
-                    </Link>
+                   <button className={styles.ctaBtn} onClick={handleClick}>
+                        {t('contactBtn')}
+                    </button>
                 </div>
             </div>
             

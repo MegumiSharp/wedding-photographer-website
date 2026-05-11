@@ -1,0 +1,17 @@
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-top: 100px; 
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 1024px) {
+  .mainSection {
+
+    padding-top: 180px; 
+  }
+}

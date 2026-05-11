@@ -27,7 +27,7 @@
     "descriptionMobile" : "Fotografia moderna e sofisticata, con sensibilità poetica e tocco editoriale. Ogni istante del vostro giorno, custodito per sempre." ,
     "subtitle": "Per questo custodiamo i vostri istanti più veri, affinché possiate rivivere l'amore in ogni sguardo.",
     "subtitleMobile": "Per rivivere l'amore in ogni sguardo"
-    
+  
   },
   "parallax": {
     "line1": "Seguendo le tue",
@@ -160,5 +160,55 @@
 
     "section10Title": "10. Diritti dell'interessato",
     "section10Text": "Gli utenti del sito www.gasparrofotografia.it hanno il diritto, in qualsiasi momento, di ottenere la conferma dell'esistenza o meno di dati personali che li riguardano, di conoscerne il contenuto e l'origine, di verificarne l'esattezza oppure di chiederne l'integrazione, l'aggiornamento o la rettifica. Hanno inoltre il diritto di richiederne la cancellazione, la limitazione del trattamento o di opporsi, per motivi legittimi, al loro trattamento, nonché di esercitare – ove applicabile – il diritto alla portabilità dei dati. Per l'esercizio di questi diritti è possibile contattare il Titolare del trattamento inviando una comunicazione all'indirizzo e-mail info@gasparrofotografia.it."
+  },
+  "contactPage": {
+    "title": "Contattaci",
+    "subtext1": "Con una storia di",
+    "subtext2": " trent'anni",
+    "subtext3": "nella fotografia di matrimonio e di eventi siamo pronti ad accompagnarti in un percorso unico. ",
+    "studioInfoLabel": "Informazioni studio",
+    "photoAlt": "Studio fotografico Gasparro — foto di esempio"
+  },
+  "contactForm": {
+    "title": "Completa il Modulo di Contatto",
+    "requiredNote": "* Sezioni obbligatorie",
+    "fields": {
+      "name": {
+        "label": "Nome e Cognome",
+        "required": true,
+        "placeholder": "Il tuo nome e cognome..."
+      },
+      "email": {
+        "label": "Email",
+        "required": true,
+        "placeholder": "La tua mail..."
+      },
+      "phone": {
+        "label": "Cellulare",
+        "required": false,
+        "placeholder": "Recapito telefonico..."
+      },
+      "eventLocation": {
+        "label": "Luogo dell'Evento",
+        "required": true,
+        "placeholder": "Città e Location..."
+      },
+      "message": {
+        "label": "Scrivici la tua visione in poche parole",
+        "required": false,
+        "placeholder": "Come immagini la fotografia perfetta per il tuo matrimonio?"
+      }},
+    "submitBtn": "Manda Messaggio",
+    "responseNote": "Ti risponderemo entro 24h inviandoti risposta via mail, se non dovessi ricevere la mail, controlla la tua casella di posta indesiderata o scrivi via",
+    "responseNoteLink": "Whatsapp",
+    "responseNoteLinkHref": "https://wa.me/393296226501",
+    "errors": {
+      "name": "Deve contenere almeno 3 caratteri",
+      "email": "Inserisci un'email valida",
+      "eventLocation": "Campo obbligatorio",
+      "message": "Campo obbligatorio"
+    },
+    "loading": "Invio in corso..."
   }
 }
+

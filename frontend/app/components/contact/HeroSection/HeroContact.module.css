@@ -1,0 +1,326 @@
+/* ============================================
+   HERO SECTION — CONTAINER PRINCIPALE
+   ============================================ */
+
+.heroSectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    padding: 32px;
+    /* rimosso overflow: hidden — tagliava l'ombra della foto */
+}
+
+
+/* ============================================
+   CONTENT — WRAPPER FOTO + TESTO
+   ============================================ */
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.title h1 {
+    font-family: var(--font-judson);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    color: #27443F;
+}
+
+.title p {
+    font-family: var(--font-afacad);
+    font-weight: 500;
+    font-size: 14px;
+    color: #2F2F2F;
+}
+
+
+/* ============================================
+   CORNER FRAMES — DECORAZIONI ANGOLARI
+   ============================================ */
+
+.leftCornerFrame,
+.rightCornerFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+    margin: -16px -24px;
+    /* i corner non escono dal flusso, il padding del container li contiene */
+    flex-shrink: 0;
+}
+
+.rightCornerFrame {
+    align-self: flex-end;
+}
+
+.left {
+    height: 60px;
+    transform: rotate(180deg);
+}
+
+.right {
+    height: 60px;
+}
+
+
+/* ============================================
+   FOTO
+   ============================================ */
+
+.photo {
+    width: 140px;
+    height: auto;
+    align-self: center;
+    /* padding esterno al contentContainer per non tagliare l'ombra */
+    box-shadow:
+        0px 54px 55px rgba(0, 0, 0, 0.25),
+        0px -12px 30px rgba(0, 0, 0, 0.12),
+        0px 4px 6px rgba(0, 0, 0, 0.12),
+        0px 12px 13px rgba(0, 0, 0, 0.17),
+        0px -3px 5px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ============================================
+   INFO BOX — MOBILE (base)
+   ============================================ */
+
+.infoBoxContainerDesktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+}
+
+.studioInformationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--font-primary);
+    line-height: 1.5;
+    color: var(--color-text-light);
+    width: 100%;
+}
+
+.infoListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.infoList strong {
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+}
+
+.subtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.infoList > svg,
+.subtext > svg {
+    display: none;
+}
+
+.infoList > span[aria-hidden] {
+    display: none;
+}
+
+
+/* ============================================
+   TABLET (min-width: 640px)
+   ============================================ */
+
+@media (min-width: 640px) {
+
+    .heroSectionContainer {
+        padding: 20px 48px; /* padding orizzontale aumentato — tiene i corner lontani dal bordo */
+    }
+
+    .leftCornerFrame,
+    .rightCornerFrame {
+        margin: -20px -48px; /* coincide col padding, i corner toccano esattamente il bordo del padding */
+    }
+
+    .left,
+    .right {
+        height: 70px;
+    }
+
+    .contentContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+        overflow: visible; /* su tablet la foto è affiancata, l'ombra deve respirare */
+        padding: 16px 0 60px; /* padding-bottom per dare spazio all'ombra in basso */
+    }
+
+    .content {
+        gap: 48px;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .photo {
+        width: 200px;
+        align-self: flex-start;
+    }
+
+    .infoBoxContainerDesktop {
+        padding: 16px 0;
+        align-items: flex-start;
+    }
+
+    .studioInformationContainer {
+        align-items: flex-start;
+    }
+
+    .infoListContainer {
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    .infoList {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 6px;
+    }
+
+    .infoList strong {
+        font-size: 13px;
+        letter-spacing: normal;
+        text-transform: none;
+        font-weight: 700;
+        color: var(--color-text-light);
+    }
+
+    .subtext {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 6px;
+    }
+
+    .infoList > svg,
+    .subtext > svg {
+        display: block;
+    }
+
+    .infoList > span[aria-hidden] {
+        display: inline;
+    }
+}
+
+
+/* ============================================
+   DESKTOP (min-width: 1024px)
+   ============================================ */
+
+@media (min-width: 1024px) {
+
+    .heroSectionContainer {
+        max-width: 80vw;
+        padding: 20px;
+    }
+
+    .leftCornerFrame,
+    .rightCornerFrame {
+        height: 110%;
+        margin: -20px -70px;
+    }
+
+    .rightCornerFrame {
+        align-self: flex-end;
+    }
+
+    .left,
+    .right {
+        height: 80px;
+    }
+
+    .contentContainer {
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        padding: 16px;
+        overflow: visible;
+    }
+
+    .content {
+        margin: 18px;
+        gap: 88px;
+    }
+
+    .photo {
+        width: 250px;
+        align-self: auto;
+    }
+
+    .infoBoxContainerDesktop {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 24px 40px;
+    }
+
+    .studioInformationContainer h3 {
+        font-weight: 700;
+        font-size: 14px;
+        color: #27443F;
+    }
+}
