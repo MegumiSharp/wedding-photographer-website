@@ -209,6 +209,35 @@
       "message": "Campo obbligatorio"
     },
     "loading": "Invio in corso..."
+  },
+  "faqSection": {
+    "title": "Domande Frequenti",
+    "faqs": {
+      "booking": {
+        "question": "Quanto tempo prima dobbiamo prenotare il servizio fotografico per il matrimonio?",
+        "answer": "Consigliamo di prenotare il prima possibile, idealmente con almeno 12 mesi di anticipo rispetto alla data del matrimonio. I weekend primaverili ed estivi vanno esauriti molto in fretta, quindi prima ci contatti, più sarà certa di assicurarsi la sua data. In ogni caso, non esiti a scriverci anche con tempistiche più brevi: faremo di tutto per trovare una soluzione."
+      },
+      "engagement": {
+        "question": "È possibile fare un servizio di engagement/pre-matrimonio?",
+        "answer": "Assolutamente sì! Il servizio di engagement è un'ottima occasione per conoscersi prima del grande giorno e per abituarsi all'obiettivo in modo naturale e rilassato. È anche un'opportunità per avere bellissime foto da usare per le partecipazioni o semplicemente da custodire come ricordo speciale del vostro percorso insieme."
+      },
+      "locations": {
+        "question": "Lavorate solo in Italia o vi spostate anche altrove?",
+        "answer": "Lavoriamo in tutta Italia e siamo disponibili a spostarci anche all'estero per destinazioni speciali. Che si tratti di una location esclusiva in Toscana, di una cerimonia sulla Costa Amalfitana o di un matrimonio in Europa, siamo pronti a seguirvi ovunque il vostro amore vi porti. Per sedi fuori dall'Italia è sufficiente concordare in anticipo le spese di trasferta."
+      },
+      "photogenic": {
+        "question": "Non sono fotogenica, come farò a venire bene in foto?",
+        "answer": "La prima domanda in assoluto che ricevo da quasi ogni sposa e puntualmente quando ricevono le fotografie restano meravigliate della loro bellezza. Siamo professionisti e sappiamo come fotografare i nostri sposi enfatizzando i pregi ed evitando le imperfezioni. In fase di lavorazione delle foto usiamo i nostri sistemi per eliminare piccole imperfezioni così da mostrarvi le immagini che sempre avete ammirato sulle riviste di moda."
+      },
+      "pricing": {
+        "question": "Qual è il costo del servizio fotografico?",
+        "answer": "I nostri pacchetti sono studiati per adattarsi a esigenze e budget differenti. Il costo varia in base alla durata della copertura, al numero di fotografi presenti e ai prodotti inclusi (album, stampe, file digitali). Vi invitiamo a contattarci per ricevere un preventivo personalizzato e senza impegno: saremo felici di trovare insieme la soluzione più adatta al vostro matrimonio."
+      },
+      "video": {
+        "question": "Offrite anche servizi video oltre alle fotografie?",
+        "answer": "Sì, collaboriamo con videomaker professionisti per realizzare trailer, film completi o brevi highlight della giornata."
+      }
+    }
   }
 }
 

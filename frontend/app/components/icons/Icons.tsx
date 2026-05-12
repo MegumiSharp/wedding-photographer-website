@@ -73,3 +73,15 @@ export function CornerSVG({ width = 600, height = 700,  color = "#27443F", class
 
     );
 }
+
+
+
+export function FaqArrow({ width = 16, height = 16,  color = "#D2B48C", className }: IconProps) {
+    return (
+       
+        <svg className= {className} width={width} height= {height} viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.75 2.91669L21.25 17.5L8.75 32.0834" stroke={color} strokeWidth="4" strokeMiterlimit="10" strokeLinecap="round"/>
+        </svg>
+
+    );
+}

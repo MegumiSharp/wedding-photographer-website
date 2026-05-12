@@ -15,18 +15,18 @@
   },
   "hero": {
     "title": "Every moment captured for your",
-    "titleHighlight": "Perfect day",
+    "titleHighlight": "Perfect Day",
     "subtitle": "WEDDING PHOTOGRAPHER IN PUGLIA & ITALY",
     "subtitleServices": "Weddings | Maternity | Newborns"
   },
   "intro": {
     "title": "EVERY DETAIL SPEAKS OF YOU:",
     "titleAccent": "EMOTION",
-    "titlePre": "WE TURN IT INTO",
-    "description": "Our studio is in constant pursuit of Beauty. As a Wedding Photographer in Puglia, our vision of photography and video is Modern & Sophisticated, capturing with spontaneity every detail and every person with poetic sensitivity and an editorial touch. It will be an immersive journey into the beauty of your event, because you deserve a unique memory that lives forever.",
-    "descriptionMobile": "Modern and sophisticated photography, with poetic sensitivity and an editorial touch. Every moment of your day, treasured forever.",
-    "subtitle": "That is why we preserve your most genuine moments, so you can relive the love in every glance.",
-    "subtitleMobile": "To relive the love in every glance"
+    "titlePre": "WE TRANSFORM IT INTO",
+    "description": "Our studio is in constant pursuit of Beauty. As a Wedding Photographer in Puglia, our vision of photography and video is Modern & Sophisticated — capturing with spontaneity every detail and every person with poetic sensitivity and an editorial touch. It will be an immersive journey into the beauty of your event, because you deserve a unique memory that lives forever.",
+    "descriptionMobile": "Modern and sophisticated photography, with poetic sensitivity and an editorial touch. Every moment of your day, preserved forever.",
+    "subtitle": "That is why we preserve your most authentic moments, so you can relive love in every glance.",
+    "subtitleMobile": "To relive love in every glance"
   },
   "parallax": {
     "line1": "Following your",
@@ -35,8 +35,8 @@
     "accent2": "memories",
     "line3": "Preserving your",
     "accent3": "legacy",
-    "description": "At Gasparro Fotografia, we are committed to telling your story and that of your wedding day by naturally capturing the details, people and authentic interactions that make it unique.",
-    "descriptionMobile": "We tell your story by capturing the details, people and authentic moments that make your wedding unique.",
+    "description": "At Gasparro Fotografia, we are committed to telling your story and the story of your wedding day by naturally capturing the details, people and authentic interactions that make it unique.",
+    "descriptionMobile": "We tell your story by capturing the authentic details, people and moments that make your wedding unique.",
     "cta": "Contact Us"
   },
   "gallerySection": {
@@ -45,8 +45,8 @@
     "textAccent1": "love",
     "textAnd": "and",
     "textAccent2": "life",
-    "descriptionMobile": "Emotions, details, unique moments. Your story, treasured forever.",
-    "description": "We tell the magic of your most special day with shots that go beyond the image. We do not simply photograph: we capture emotions, details, unique moments that speak of you. A sudden smile, a gentle touch, a glance that says it all. Because your story deserves to be treasured forever.",
+    "descriptionMobile": "Emotions, details, unique moments. Your story, preserved forever.",
+    "description": "We tell the magic of your most special day with shots that go beyond the image. We do not simply photograph — we capture emotions, details, unique moments that speak of you. A spontaneous smile, a gentle touch, a glance that says everything. Because your story deserves to be preserved forever.",
     "cta": "Gallery",
     "ariaLabel": "Photo gallery",
     "carouselAriaLabel": "Photo carousel of our work"
@@ -60,7 +60,7 @@
     },
     "maternity": {
       "title": "Maternity",
-      "description": "We celebrate the wonderful journey of maternity with elegant and intimate portraits that tell the story of anticipation and joy of this unique moment."
+      "description": "We celebrate the wonderful journey of motherhood with elegant and intimate portraits that tell the story of anticipation and joy in this unique moment."
     },
     "newborn": {
       "title": "Newborns",
@@ -68,8 +68,8 @@
     }
   },
   "finalSection": {
-    "title": "THE NEXT CHAPTER IS",
-    "titleAccent": "WAITING FOR YOU",
+    "title": "YOUR NEXT CHAPTER IS",
+    "titleAccent": "WAITING",
     "subtitle": "Discover the opportunities created for you",
     "cta": "Contact Us"
   },
@@ -92,14 +92,14 @@
     "mobile": "329 6226501",
     "mobileHref": "tel:3296226501",
     "mobileAriaLabel": "Call the mobile 329 6226501",
-    "mobileLabel": "Cell:",
+    "mobileLabel": "Mob:",
     "email": "info@gasparrofotografia.it",
     "emailHref": "mailto:info@gasparrofotografia.it",
     "emailAriaLabel": "Send an email to info@gasparrofotografia.it",
     "emailLabel": "Email:",
     "hours": "You can visit us Monday to Saturday: 9:00 AM – 1:00 PM | 4:30 PM – 8:30 PM",
     "menuTitle": "Menu",
-    "copyright": " | Studio specializing in Wedding Photo and Video in Puglia & Italy | Maternity and Newborns",
+    "copyright": " | Studio specializing in Wedding Photo & Video in Puglia & Italy | Maternity and Newborns",
     "privacyLabel": "Privacy Policy",
     "privacyHref": "/privacy",
     "social": {
@@ -125,28 +125,117 @@
     "intro1": "Information on the processing of personal data (art. 13 of Law 196/03) for the website ",
     "link": "www.gasparrofotografia.it",
     "linkHref": "https://www.gasparrofotografia.it",
-    "intro2": " by Donato Gasparro. The information on this page summarizes the privacy and personal data protection policies of Donato Gasparro, the company that owns the website ",
+    "intro2": " by Donato Gasparro. The information on this page summarizes the privacy and personal data protection policies of Donato Gasparro, the company owning the website ",
     "intro3": ". This notice is provided pursuant to art. 13 of Legislative Decree No. 196/2003 – Personal Data Protection Code – to those who interact with the web services of Donato Gasparro, accessible at the web address ",
-    "intro4": ". This policy does not apply to other websites accessible through our links, for which Donato Gasparro is in no way responsible.",
+    "intro4": ". This policy does not apply to other websites accessible via our links, for which Donato Gasparro bears no responsibility.",
+
     "section1Title": "1. Data Controller",
-    "section1Text": "The data controller is Donato Gasparro, Photography Studio: Fotografia Gasparro, located at Piazza XX Settembre, 15, Martina Franca 74015, Puglia, Italy, reachable by email: info@gasparrofotografia.it.",
+    "section1Text": "The data controller is Donato Gasparro, Photography Studio: Fotografia Gasparro, located at Piazza XX Settembre, 15, Martina Franca 74015, Puglia, Italy, reachable by email at: info@gasparrofotografia.it.",
+
     "section2Title": "2. Scope of Application",
-    "section2Text": "This notice applies to the website www.gasparrofotografia.it and describes how personal data provided by users through the contact form is processed. The policy does not apply to other linked websites, for which the studio is not responsible.",
+    "section2Text": "This notice applies to the website www.gasparrofotografia.it and describes how personal data provided by users through the contact form is processed. The policy does not apply to other linked websites, for which the studio bears no responsibility.",
+
     "section3Title": "3. Types of Data Collected",
-    "section3Text": "Through the contact form, the following data may be collected: first and last name, email address, mobile number and any other data voluntarily provided by the user in the message.",
+    "section3Text": "Through the contact form, the following data may be collected: first and last name, email address, mobile number and any other data voluntarily provided by the user in their message.",
+
     "section4Title": "4. Purpose of Processing",
-    "section4Text": "Data collected through the contact form will be used exclusively to respond to contact requests from clients (e.g. brides or clients interested in photography services) and to maintain email correspondence until the discussion is concluded. Data will not be used for marketing purposes nor shared with third parties, except as required by law.",
+    "section4Text": "Data collected through the contact form will be used solely to respond to client enquiries (e.g. brides or clients interested in photography services) and to maintain email correspondence until the matter is resolved. Data will not be used for marketing purposes or shared with third parties, except as required by law.",
+
     "section5Title": "5. Legal Basis for Processing",
-    "section5Text": "Processing is based on the performance of pre-contractual measures at the request of the data subject (art. 6, paragraph 1, letter b of the GDPR). No consent via checkbox is required to submit the form.",
+    "section5Text": "Processing is based on the execution of pre-contractual measures at the request of the data subject (art. 6, para. 1, letter b of the GDPR). No consent checkbox is required to submit the form.",
+
     "section6Title": "6. Data Retention",
-    "section6Text": "Data will be retained only for as long as necessary to respond to requests and maintain email correspondence. Beyond this period, data will not be stored.",
+    "section6Text": "Data will be retained only for as long as necessary to respond to enquiries and maintain email correspondence. Beyond this period, data will not be stored.",
+
     "section7Title": "7. Processing Methods",
     "section7Text": "Data is processed using electronic tools and appropriate security measures to prevent loss, unauthorized access or unlawful use.",
+
     "section8Title": "8. Cookies and Tracking Tools",
     "section8Text": "The website does not use profiling cookies or external tracking systems.",
+
     "section9Title": "9. Use of Photographs",
-    "section9Text": "Photos taken by the studio may be used for advertising purposes on the website, social media and promotional materials. The copyright of the photos belongs to Donato Gasparro / Photography Studio Fotografia Gasparro. Any images of clients will only be published with their explicit consent.",
+    "section9Text": "Photos taken by the studio may be used for promotional purposes on the website, social media and marketing materials. Copyright of all photos belongs to Donato Gasparro / Photography Studio Fotografia Gasparro. Images of clients will only be published with their explicit consent.",
+
     "section10Title": "10. Rights of the Data Subject",
-    "section10Text": "Users of www.gasparrofotografia.it have the right, at any time, to obtain confirmation of whether or not personal data concerning them exists, to know its content and origin, to verify its accuracy or to request its integration, updating or correction. They also have the right to request its deletion, restriction of processing or to object, for legitimate reasons, to its processing, as well as to exercise – where applicable – the right to data portability. To exercise these rights, please contact the Data Controller by sending a message to info@gasparrofotografia.it."
+    "section10Text": "Users of the website www.gasparrofotografia.it have the right, at any time, to obtain confirmation of whether or not personal data concerning them exists, to know its content and origin, to verify its accuracy or request its integration, update or correction. They also have the right to request erasure, restriction of processing or to object, on legitimate grounds, to its processing, as well as to exercise — where applicable — the right to data portability. To exercise these rights, please contact the Data Controller by sending a message to info@gasparrofotografia.it."
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtext1": "With a history of",
+    "subtext2": " thirty years",
+    "subtext3": "in wedding and event photography, we are ready to accompany you on a unique journey.",
+    "studioInfoLabel": "Studio information",
+    "photoAlt": "Gasparro Photography Studio — sample photo"
+  },
+  "contactForm": {
+    "title": "Complete the Contact Form",
+    "requiredNote": "* Required fields",
+    "fields": {
+      "name": {
+        "label": "Full Name",
+        "required": true,
+        "placeholder": "Your full name..."
+      },
+      "email": {
+        "label": "Email",
+        "required": true,
+        "placeholder": "Your email address..."
+      },
+      "phone": {
+        "label": "Mobile",
+        "required": false,
+        "placeholder": "Your phone number..."
+      },
+      "eventLocation": {
+        "label": "Event Location",
+        "required": true,
+        "placeholder": "City and venue..."
+      },
+      "message": {
+        "label": "Tell us your vision in a few words",
+        "required": false,
+        "placeholder": "How do you imagine the perfect photography for your wedding?"
+      }
+    },
+    "submitBtn": "Send Message",
+    "responseNote": "We will reply within 24 hours by email. If you do not receive our reply, please check your spam folder or reach us via",
+    "responseNoteLink": "WhatsApp",
+    "responseNoteLinkHref": "https://wa.me/393296226501",
+    "errors": {
+      "name": "Must contain at least 3 characters",
+      "email": "Please enter a valid email address",
+      "eventLocation": "This field is required",
+      "message": "This field is required"
+    },
+    "loading": "Sending..."
+  },
+  "faqSection": {
+    "title": "Frequently Asked Questions",
+    "faqs": {
+      "booking": {
+        "question": "How far in advance should we book the wedding photography service?",
+        "answer": "We recommend booking as early as possible, ideally at least 12 months before your wedding date. Spring and summer weekends fill up very quickly, so the sooner you contact us, the more likely you are to secure your date. That said, do not hesitate to reach out even with shorter notice — we will do our best to find a solution."
+      },
+      "engagement": {
+        "question": "Is it possible to do an engagement or pre-wedding shoot?",
+        "answer": "Absolutely! An engagement session is a wonderful opportunity to get to know each other before the big day and to feel comfortable in front of the camera in a natural and relaxed way. It is also a great chance to have beautiful photos to use for your invitations or simply to keep as a special memory of your journey together."
+      },
+      "locations": {
+        "question": "Do you work only in Italy or do you also travel abroad?",
+        "answer": "We work throughout Italy and are available to travel abroad for special destinations. Whether it is an exclusive venue in Tuscany, a ceremony on the Amalfi Coast or a wedding in Europe, we are ready to follow you wherever your love takes you. For destinations outside Italy, travel expenses simply need to be agreed upon in advance."
+      },
+      "photogenic": {
+        "question": "I am not photogenic — how will I look good in photos?",
+        "answer": "This is by far the question we hear most from brides, and yet when they receive their photos they are always amazed by how beautiful they look. We are professionals who know how to photograph our couples by highlighting their best features and minimizing imperfections. During the editing process we use our tools to gently refine the images, giving you the polished, magazine-worthy look you have always admired."
+      },
+      "pricing": {
+        "question": "What is the cost of the photography service?",
+        "answer": "Our packages are designed to suit different needs and budgets. The price varies depending on the length of coverage, the number of photographers and the products included (albums, prints, digital files). We invite you to contact us for a personalized, no-obligation quote — we will be happy to find the solution that best fits your wedding."
+      },
+      "video": {
+        "question": "Do you also offer video services in addition to photography?",
+        "answer": "Yes, we collaborate with professional videographers to create trailers, full-length films or short highlight reels of your day."
+      }
+    }
   }
 }

@@ -54,7 +54,8 @@ export default function HeroContact() {
                                             aria-label={t('addressAriaLabel')}
                                             style={{ textDecoration: 'underline' }}
                                         >
-                                            {t('address')}
+                                            <span className={styles.mob}>{t('addressMobile')}</span>
+                                            <span className={styles.desk}>{t('address')}</span>
                                         </a>
                                     </li>
 
@@ -68,7 +69,10 @@ export default function HeroContact() {
                                         >
                                             {t('phone')}
                                         </a>
-                                        <span aria-hidden="true">|</span>
+                                    </li>
+
+                                    <li className={styles.infoList}>
+                                        <DotSvg size={8} aria-hidden="true" />
                                         <strong>{t('mobileLabel')}</strong>
                                         <a
                                             href={t('mobileHref')}

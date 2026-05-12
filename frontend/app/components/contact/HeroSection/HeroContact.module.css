@@ -40,25 +40,26 @@
 }
 
 .title {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left; 
 }
 
 .title h1 {
-    font-family: var(--font-judson);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    color: #27443F;
+  font-family: var(--font-judson);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: #27443F;
+  line-height: 1.3;
 }
 
 .title p {
-    font-family: var(--font-afacad);
-    font-weight: 500;
-    font-size: 14px;
-    color: #2F2F2F;
+  font-family: var(--font-afacad);
+  font-weight: 500;
+  font-size: 13px;
+  color: #2F2F2F;
 }
 
 
@@ -136,17 +137,16 @@
 .infoListContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
     width: 100%;
 }
 
 .infoList {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 2px;
+
+    gap: 4px;
     font-weight: 400;
     font-size: 13px;
 }
@@ -179,12 +179,24 @@
     display: none;
 }
 
+.desk{
+    display: none;
+}
+
 
 /* ============================================
    TABLET (min-width: 640px)
    ============================================ */
 
 @media (min-width: 640px) {
+    .desk{
+        display: inline;
+    }
+
+    .mob{
+        display: none;
+    }
+
 
     .heroSectionContainer {
         padding: 20px 48px; /* padding orizzontale aumentato — tiene i corner lontani dal bordo */
@@ -243,7 +255,7 @@
     }
 
     .infoList strong {
-        font-size: 13px;
+        font-size: 14px;
         letter-spacing: normal;
         text-transform: none;
         font-weight: 700;
@@ -268,59 +280,143 @@
 }
 
 
+
+
 /* ============================================
-   DESKTOP (min-width: 1024px)
+   TABLET — 640px+
    ============================================ */
+@media (min-width: 640px) {
+  .heroSectionContainer {
+    padding: 20px 48px;
+  }
 
+  .leftCornerFrame,
+  .rightCornerFrame {
+    margin: -20px -48px;
+  }
+
+  .left,
+  .right {
+    height: 70px;
+  }
+
+  .contentContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 16px 0 60px;
+  }
+
+  .content {
+    gap: 32px;
+  }
+
+  .title h1 {
+    font-size: 30px;
+  }
+
+  .title p {
+    font-size: 14px;
+  }
+
+  .photo {
+    width: 200px;
+    align-self: flex-start;
+  }
+
+  .infoBoxContainerDesktop {
+    padding: 8px 0;
+    align-items: flex-start;
+  }
+}
+
+
+/* ============================================
+   DESKTOP — 1024px+
+   ============================================ */
 @media (min-width: 1024px) {
+  .heroSectionContainer {
+    max-width: 80vw;
+    padding: 20px;
+  }
 
-    .heroSectionContainer {
-        max-width: 80vw;
-        padding: 20px;
-    }
+  .leftCornerFrame,
+  .rightCornerFrame {
+    height: 110%;
+    margin: -20px -70px;
+  }
 
-    .leftCornerFrame,
-    .rightCornerFrame {
-        height: 110%;
-        margin: -20px -70px;
-    }
+  .left,
+  .right {
+    height: 80px;
+  }
 
-    .rightCornerFrame {
-        align-self: flex-end;
-    }
+  .contentContainer {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    padding: 16px;
+  }
 
-    .left,
-    .right {
-        height: 80px;
-    }
+  .content {
+    margin: 18px;
+    gap: 48px;
+  }
 
-    .contentContainer {
-        flex-direction: row;
-        align-items: center;
-        gap: 0;
-        padding: 16px;
-        overflow: visible;
-    }
+  .title h1 {
+    font-size: 38px;
+  }
 
-    .content {
-        margin: 18px;
-        gap: 88px;
-    }
+  .title p {
+    font-size: 16px;
+  }
 
-    .photo {
-        width: 250px;
-        align-self: auto;
-    }
+  .photo {
+    width: 250px;
+    align-self: auto;
+  }
 
-    .infoBoxContainerDesktop {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 24px 40px;
-    }
+  .infoList {
+    font-size: 15px;
+  }
 
-    .studioInformationContainer h3 {
-        font-weight: 700;
-        font-size: 14px;
-        color: #27443F;
-    }
+  .infoList strong {
+    font-size: 13px;
+  }
+
+  .subtext {
+    font-size: 13px;
+  }
+
+  .studioInformationContainer h3 {
+    font-weight: 700;
+    font-size: 14px;
+    color: #27443F;
+  }
+}
+
+
+/* ============================================
+   WIDE — 1440px+
+   ============================================ */
+@media (min-width: 1440px) {
+  .title h1 {
+    font-size: 44px;
+  }
+
+  .title p {
+    font-size: 17px;
+  }
+
+  .infoList {
+    font-size: 16px;
+  }
+
+  .infoList strong {
+    font-size: 14px;
+  }
+
+  .photo {
+    width: 300px;
+  }
 }

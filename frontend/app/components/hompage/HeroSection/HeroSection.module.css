@@ -67,9 +67,6 @@
     font-weight: var(--weight-medium);
     text-shadow:
         0 0 7px #fff,
-        0 0 42px rgb(255, 255, 255),
-        0 0 82px rgb(255, 255, 255),
-        0 0 92px rgb(255, 255, 255),
         0 0 102px rgb(255, 255, 255),
         0 0 151px rgb(255, 255, 255);
 }
