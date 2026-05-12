@@ -111,11 +111,12 @@ export default function HeroContact() {
                 <Image
                     src="/images/contactPhoto.webp"
                     alt={c('photoAlt')}
-                    width={1920}
-                    height={1080}
+                    width={600}
+                    height={800}
                     className={styles.photo}
                     loading="eager"
                     priority
+                    sizes="(max-width: 640px) 100px, (max-width: 1024px) 200px, (max-width: 1440px) 250px, 300px"
                 />
             </div>
 
