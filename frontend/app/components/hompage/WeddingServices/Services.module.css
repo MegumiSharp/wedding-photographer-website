@@ -55,6 +55,7 @@
     transform: translateY(0);
     width: clamp(15rem, 30%, 21rem);
     user-select: none;
+   
 }
 
 

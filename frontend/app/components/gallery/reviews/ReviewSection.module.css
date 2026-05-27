@@ -1,0 +1,88 @@
+.reviewContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    border-top: 1px solid rgba(39, 68, 63, 0.79);
+
+}
+
+.mainContent,
+.reviewsCarousell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.leftCornerFrame,
+.rightCornerFrame {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+    margin: -16px -24px;
+}
+
+.rightCornerFrame {
+    align-self: flex-end;
+}
+
+.left {
+    height: 60px;
+    transform: rotate(180deg);
+}
+
+.right {
+    height: 60px;
+}
+
+.cta{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 14px;
+
+    font-family: var(--font-afacad);
+    font-size: 18px;
+    color: #2F2F2F;
+}
+
+
+
+.reviewTitle{
+    font-family: var(--font-secondary);
+    font-size: var(--size-medium);
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.reviewTitle svg{
+    width: 200px;
+}
+
+@media (min-width: 600px){
+    .leftCornerFrame,
+    .rightCornerFrame {
+        display: flex;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .reviewTitle svg{
+        width: 250px;
+        height: 50px;
+    }
+}

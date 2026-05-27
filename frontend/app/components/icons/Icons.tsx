@@ -5,6 +5,7 @@ interface IconProps {
     color?: string;
     rotate?: boolean;
     className?: string;
+    flipped?: boolean;
 }
 
 export function DotSvg({ size = 24, color = "#27443F" }: IconProps) {
@@ -85,3 +86,31 @@ export function FaqArrow({ width = 16, height = 16,  color = "#D2B48C", classNam
 
     );
 }
+
+
+export function ReviewArrow({ width = 28, height = 28, color = "#27443F", className, flipped = false }: IconProps) {
+    return (
+        <svg 
+            width={width} 
+            height={height} 
+            viewBox="0 0 28 28" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className={className}
+            style={{ transform: flipped ? 'scaleX(-1)' : 'none' }}
+        >
+            <g clipPath="url(#clip0_2072_387)">
+                <path d="M20.6312 13.7542L8.02328 13.7542" stroke={color} strokeWidth="2.57889" strokeMiterlimit="10"/>
+                <path d="M12.6077 18.3362L8.02304 13.7516L12.6077 9.16687" stroke={color} strokeWidth="2.57889" strokeMiterlimit="10" strokeLinecap="square"/>
+                <path d="M13.7537 1.14586C6.7906 1.14586 1.14586 6.7906 1.14586 13.7537C1.14586 20.7169 6.7906 26.3616 13.7537 26.3616C20.7169 26.3616 26.3616 20.7169 26.3616 13.7537C26.3616 6.7906 20.7169 1.14586 13.7537 1.14586Z" stroke={color} strokeWidth="2.57889" strokeMiterlimit="10" strokeLinecap="square"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_2072_387">
+                    <rect width="27.5081" height="27.5081" fill="white" transform="matrix(-1 0 0 -1 27.5081 27.5081)"/>
+                </clipPath>
+            </defs>
+        </svg>
+    );
+}
+
+                

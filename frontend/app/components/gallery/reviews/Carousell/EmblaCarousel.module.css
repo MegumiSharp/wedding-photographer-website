@@ -1,0 +1,186 @@
+/* ===========================
+   SECTION WRAPPER
+   =========================== */
+
+.sectionContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 20px;
+    border: 2px solid #27443F;
+
+    font-size: 14px;
+    text-align: justify;
+    max-width: 90%;
+
+    border-radius: var(--radius-large);
+    background: #FFF3EA;
+    box-shadow: 0px 4px 24px 0 rgba(0, 0, 0, 0.10);
+    box-sizing: border-box;
+}
+
+/* ===========================
+   EMBLA CAROUSEL
+   =========================== */
+
+.embla {
+    width: 100%;
+    min-width: 0;          
+    --slide-spacing: 0px;
+    --slide-size: 100%;
+}
+
+.embla__viewport {
+    overflow: hidden;
+    width: 100%;
+    min-width: 0;        
+}
+
+.embla__container {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-width: 0;        
+}
+
+.embla__slide {
+    flex: 0 0 var(--slide-size);
+    min-width: 0;
+    padding: 0 4px;        
+    display: flex;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   MESSAGE CONTENT
+   =========================== */
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    width: 100%;
+    overflow: hidden;
+    word-break: break-word;   
+    overflow-wrap: break-word;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.nameDate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #27443F;
+    font-size: 18px;
+}
+
+.titleRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-weight: 600;
+    color: #27443F;
+}
+
+.rating {
+    font-weight: 600;
+    color: #27443F;
+    text-align: center;
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+.date {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-left: 12px;
+}
+
+/* ===========================
+   NAVIGATION BUTTONS
+   =========================== */
+
+.btn {
+    background-color: transparent;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.btn:hover {
+    background-color: transparent;
+    transform: scale(1.125);
+}
+
+.btn:active{
+    transform: scale(0.90);
+}
+
+
+.arrow {
+    width: 18px;
+}
+
+.bigBtn {
+    display: none;
+}
+
+.smallBtn {
+    display: flex;
+    gap: 16px;
+}
+
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        font-size: 16px;
+        padding: 28px 32px;
+        margin: 0 32px;
+        flex-direction: row;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .bigBtn {
+        display: inline;
+    }
+
+    .smallBtn {
+        display: none;
+    }
+
+    .nameDate {
+        font-size: 20px;
+    }
+
+    .arrow {
+        width: 24px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .sectionContainer {
+        max-width: 60%;
+    }
+}

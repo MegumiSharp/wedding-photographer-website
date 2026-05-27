@@ -238,6 +238,37 @@
         "answer": "Sì, collaboriamo con videomaker professionisti per realizzare trailer, film completi o brevi highlight della giornata."
       }
     }
+  },
+  "reviewsSections" : {
+    "title": "Recensioni",
+    "cta":  "Contattaci",
+    "subtitle": "Rendi indimenticabile il tuo matrimonio:",
+    "reviews": {
+      "review1": {
+        "name":"Elisa",
+        "date": "03/09/2025",
+        "title": "Emozione Pura ❤️",
+        "comment": "Ci siamo sposati il 27 agosto 2025 e abbiamo scelto Gasparro fotografia dopo averlo visto a uhm altro matrimonio. Il servizio è stato eccellente e le foto meravigliose. Ha saputo cogliere i momenti più belli di quella giornata cogliendo le emozioni più profonde. Credo che non avremmo potuto fare scelta migliore. Non vediamo l’ora di rivivere quella giornata attraverso le foto e i video. Grazie di cuore ❤️"
+      },
+      "review2": {
+        "name":"Fabio & Giusy",
+        "date": "07/07/2025",
+        "title": "Fotografo top",
+        "comment": "Finalmente qualche minuto per dedicarvi il giusto tempo che vi meritate per il vostro impegno,e professionalità. Siete stati fantastici dal primo momento che ci siamo incontrati. Grazie per la pazienza sopratutto che avete avuto con Cosìmo dal pre matrimoniale al giorno del Matrimonio .Grazie per i minimi dettagli che avete catturato nel nostro giorno importante della nostra vita . Grazie a Vito per averci messo tutta la professione e la passione nel farci vivere quel giorno . Siete una garanzia ,bravissimi,professionali❤️ siete il top 🔝. Grazie Donato ,Gianmarco,Paolo,Vito. Sappiate scegliere bene per il vostro giorno .loro sono una garanzia a vita ❤️"
+      },
+      "review3": {
+        "name":"Tiziana",
+        "date": "07/07/2025",
+        "title": "I migliori",
+        "comment": "Non possiamo che essere grati e felici per aver avuto al nostro fianco un team di fotografi così speciale. Professionali, bravissimi, attenti a ogni dettaglio… ma soprattutto umani. Ci hanno fatto sentire a nostro agio in ogni momento, con discrezione, sensibilità e un sorriso sempre pronto. Un grazie particolare va a Gianmarco, che per noi è prima di tutto un amico: la sua presenza ci ha rassicurati e ci ha regalato tanti momenti pieni di spontaneità e affetto. Le foto sono meravigliose, autentiche, piene di emozioni vere. Non potevamo desiderare di meglio per custodire i ricordi del nostro giorno. Grazie di cuore!"
+      },
+      "review4": {
+        "name":"Alessia ",
+        "date": "24/10/2024",
+        "title": "Emozioni catturate dal miglior team fotografico!",
+        "comment": "Un team fotografico pazzesco. Abbiamo vissuto il giorno del nostro matrimonio in modo impeccabile. Donato Gasparro e Gianmarco Gasparro ci hanno seguiti passo per passo, catturando ogni minimo dettaglio, con l’aiuto del videografo Vito Montuori, che ha filmato ogni singolo momento, facendoci emozionare. Grazie a questo team unico e professionale per aver reso il giorno del nostro matrimonio un giorno indimenticabile. Da scegliere altre mille volte!! Grazie!"
+      }
+    }
   }
 }
 
